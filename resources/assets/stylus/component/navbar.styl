@@ -1,0 +1,85 @@
+#logo {
+    background-image:url(http://i.imgur.com/MSKtRRM.png);
+    background-size: 150px 40px;
+    background-repeat: no-repeat;
+    background-position: center; 
+    display:block;
+    text-indent:-9999px;
+}
+
+.navbar {
+  box-shadow: 1px 1.732px 5px 0px rgba(4,5,6,0.2);
+	background-color: white;
+	z-index: 1000;
+	height: 60px;
+	line-height: 60px;
+    margin: 10px;
+  text-align: center;
+}
+nav {
+    &:first-child {
+		lost-column: 2/12 no-flex;
+	}
+    &:nth-child(2) {
+		lost-column: 8/12 no-flex;
+		overflow: auto;
+		a:hover {
+					border-bottom: 3px solid;
+					border-color: #e4151f;
+					transition: all linear 0.3s;
+					color: #333;
+				}	
+	}
+	&:last-child {
+		lost-column: 2/12 no-flex;
+	}
+	a {
+		color: #333;
+	  font-size: 14px;
+		text-transform: uppercase;
+    text-decoration : none;
+    font-weight: 600;
+    
+	}
+	ul {
+		display: inline-flex;
+		flex-wrap: wrap;
+		list-style: none;
+		padding: 0;
+    
+		li {
+			padding: 0;
+			position: relative;
+			&:hover ul{
+				display: block;
+			}
+			&>a {
+				display: flex;
+				padding: 0 10px;
+				border-bottom: 3px solid;
+				border-color: transparent;
+				color: #000;
+				line-height: 20px;
+	
+				&.active {
+					border-bottom: 3px solid;
+					border-color: #e4151f;
+					font-weight: bold;
+					&>a:hover {
+						border-bottom: 0 !important;
+					}
+				}
+				i {
+					line-height: 10px;
+				}	
+			}
+			ul {
+				display: none;
+				position: fixed;
+				padding: 10px;
+				background-color: white;
+				z-index: 1000;
+			}
+		}
+	}	
+}
