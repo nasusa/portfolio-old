@@ -30,19 +30,20 @@
             <p>testing</p>
         </div>
         <div class="halfrow">
-            <div class="quarter">
-                <div class="box half">
-                    <p>1</p>
-                </div>
-                <div class="box half">
-                    <p>2</p>
-                </div>
+            <div class="box eighth">
+                <p>1</p>
+            </div>
+            <div class="box eighth">
+                <p>2</p>
             </div>
             <div class="box quarter">
                 <p>testing</p>
             </div>
-            <div class="box quarter">
-                <p>testing</p>
+            <div class="box eighth">
+                <p>3</p>
+            </div>
+            <div class="box eighth">
+                <p>4</p>
             </div>
             <div class="box quarter">
                 <p>testing</p>
