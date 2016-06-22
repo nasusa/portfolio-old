@@ -2,10 +2,15 @@
 
 Täältä voitte tutkia minun edistymistä.
 
-* Laravel Frameworkia
-* Stylus Post CSS
+* Laravel Framework
+* Stylus PostCSS
 * Lost Grid
 * Font Awesome
+* Flexbox
+* CSS3
+* HTML5
+* PHP
+* JS
 
 
 

@@ -14,24 +14,24 @@ html {
   color: #212121;
   background-color: #2196F3;
 }
-
 section {
   lost-center: 1140px;
+  lost-utility: clearfix;
 }
-.col-2 {
-  lost-column: 2/12;
+.halfrow {
+  lost-row: 1/2;
 }
-.col-3 {
-  lost-column: 3/12;
+.half {
+  lost-column: 1/2;
 }
-.col-4 {
-  lost-column: 4/12;
+.full {
+  lost-column: 1/1;
 }
-.col-5 {
-  lost-column: 5/12;
+.quarter {
+  lost-column: 1/4 0;
 }
-.col-6 {
-  lost-column: 6/12;
+.row {
+  lost-flex-container: row;
 }
 hr {
   border: 0;
@@ -39,13 +39,13 @@ hr {
   width: 100%;
 }
 
-
-
 .box {
-  margin: 10px auto 10px auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
   background-color: white;
-  padding: 15px;
   box-shadow: 1px 1.732px 5px 0px rgba(4,5,6,0.2);
+  padding: 15px;
+  box-sizing: border-box;
 }
  .center {
    text-align: center;
@@ -53,7 +53,7 @@ hr {
 
 .back-to-top {
   position: fixed;
-  bottom: 0.5em;
+  bottom: 1em;
   right: 1em;
   display: inline-block;  
   color: #00BCD4;
