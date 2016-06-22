@@ -1,57 +1,29 @@
 @lost flexbox flex;
+.dark-primary-color    { background: #1976D2; }
+.default-primary-color { background: #2196F3; }
+.light-primary-color   { background: #BBDEFB; }
+.text-primary-color    { color: #FFFFFF; }
+.accent-color          { background: #00BCD4; }
+.primary-text-color    { color: #212121; }
+.secondary-text-color  { color: #727272; }
+.divider-color         { border-color: #B6B6B6; }
 
 body {
   font-family: 'Roboto', sans-serif;
   color: #212121;
-  background: url(http://i.imgur.com/IiYoOnX.jpg) no-repeat center center fixed; 
-  background-size: cover;
-}
-::-webkit-input-placeholder {
-  color: #000;
-  font-family: 'Roboto', sans-serif;
-}
-
-.otsing {
-  margin:10px auto;
-  text-align: center;
-  &>input[type=text] {
-    padding:10px 8px;
-    background:rgba(50, 50, 50, 0.1);
-    border:1px solid rgba(255,0,0,0.3);
-    font-weight: bold;
-  }
-  &>input[type=button] {
-    color:#FFF;
-    padding:10px 15px;
-    background:#ff0000;
-    font-weight: bold;
-    border:1px solid rgba(255,0,0,0.3);
-    &:hover, $:focus {
-        background-color:rgba(255,0,0,0.3);
-        color:#FFF;
-        font-weight: bold;
-      border:0px;
-    }
-  }
+  background-color: #2196F3;
 }
 
 hr {
   border: 0;
-	border-top: 1px solid rgba(0,0,0,0.1);;
+	border-top: 1px solid rgba(182,182,182,0.1);
   width: 100%;
 }
 
 .body {
-  lost-center: 980px;
+  lost-center: 1170px;
   margin-top: 30px;
 }
-.sidebar {
-	lost-column: 4/12;
-	}
-.content {
-	lost-column: 7/12;
-    margin-right: 0px !important;
-	}
 .box {
   margin-bottom: 15px;
   margin-top: 15px;
@@ -66,10 +38,10 @@ hr {
   bottom: 1em;
   right: 1em;
   display: inline-block;  
-  color: #ff0000;
+  color: #00BCD4;
   font-size: 30px;
   &:hover{
     cursor: pointer;
-    color: #000;
+    color: #1976D2;
   }
 }

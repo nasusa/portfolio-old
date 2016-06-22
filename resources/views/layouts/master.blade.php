@@ -2,7 +2,7 @@
 <html class="no-js">
     <head>
         @include('layouts.partials.meta') 
-        <title>HipHop.ee - @yield('title')</title>
+        <title>Alan Aasmaa - @yield('title')</title>
         @include('layouts.partials.css') 
         @yield('styles')
         @include('layouts.partials.shim')
@@ -10,13 +10,14 @@
     <body>
         @include('layouts.partials.navbar')
         @include('errors.list') 
-        <div class="body">
-        @include('layouts.partials.sidebar')
-        <div class="content box">
         @yield('content')
-        </div>
         @include('layouts.partials.footer') 
-        <div class="back-to-top"><i class="fa fa-arrow-circle-up"></i></div>
+        <div class="back-to-top">
+            <span class="fa-stack">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-arrow-up fa-stack-1x fa-inverse"></i>
+            </span>
+        </div>
         @include('layouts.partials.scripts')
         @yield('scripts')
     </body>

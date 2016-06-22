@@ -24,7 +24,7 @@ elixir(function(mix) {
     ])
 
     .browserSync({ 
-        proxy: 'hiphop.dev',
+        proxy: 'cv.dev',
         notify: false
     });
 });

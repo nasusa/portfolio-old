@@ -1,15 +1,13 @@
 @extends('layouts.master')
 
 @section('title', 'Etusivu')
+@section('description', 'This is a description')
+@section('keywords', 'These, are, keywords')
 @section('styles')
 
 @stop
 @section('content')
-main stuff
-    <div class="article">
-      <div class="articlefooter">
-      </div>
-    </div>
+main stufffff SEE ON CV
 @section('scripts')
 
 @stop
