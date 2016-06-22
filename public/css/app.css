@@ -27,6 +27,14 @@ body {
   color: #212121;
   background-color: #2196f3;
 }
+section {
+  display: -webkit-box;
+  display: flex;
+  flex-flow: row wrap;
+  max-width: 980px;
+  margin-left: auto;
+  margin-right: auto;
+}
 hr {
   border: 0;
   border-top: 1px solid rgba(182,182,182,0.1);
@@ -54,7 +62,7 @@ hr {
   right: 1em;
   display: inline-block;
   color: #00bcd4;
-  font-size: 30px;
+  font-size: 1.5em;
 }
 .back-to-top:hover {
   cursor: pointer;
@@ -68,68 +76,65 @@ hr {
   line-height: 60px;
   margin: 10px;
   text-align: center;
+  display: -webkit-box;
+  display: flex;
 }
 nav:first-child {
-  width: calc(99.99% * 2/12 - (30px - 30px * 2/12));
+  -webkit-box-flex: 0;
+  flex: 0 0 auto;
+  width: calc(99.99% * 3/12 - (30px - 30px * 3/12));
+  overflow: auto;
 }
 nav:first-child:nth-child(1n) {
-  float: left;
   margin-right: 30px;
-  clear: none;
+  margin-left: 0;
 }
 nav:first-child:last-child {
   margin-right: 0;
 }
 nav:first-child:nth-child(12n) {
   margin-right: 0;
-  float: right;
-}
-nav:first-child:nth-child(12n + 1) {
-  clear: left;
+  margin-left: auto;
 }
 nav:nth-child(2) {
-  width: calc(99.99% * 8/12 - (30px - 30px * 8/12));
+  -webkit-box-flex: 0;
+  flex: 0 0 auto;
+  width: calc(99.99% * 6/12 - (30px - 30px * 6/12));
   overflow: auto;
 }
 nav:nth-child(2):nth-child(1n) {
-  float: left;
   margin-right: 30px;
-  clear: none;
+  margin-left: 0;
 }
 nav:nth-child(2):last-child {
   margin-right: 0;
 }
 nav:nth-child(2):nth-child(12n) {
   margin-right: 0;
-  float: right;
-}
-nav:nth-child(2):nth-child(12n + 1) {
-  clear: left;
+  margin-left: auto;
 }
 nav:nth-child(2) a:hover {
   border-bottom: 3px solid;
-  border-color: #e4151f;
+  border-color: #1976d2;
   -webkit-transition: all linear 0.3s;
   transition: all linear 0.3s;
   color: #333;
 }
 nav:last-child {
-  width: calc(99.99% * 2/12 - (30px - 30px * 2/12));
+  -webkit-box-flex: 0;
+  flex: 0 0 auto;
+  width: calc(99.99% * 3/12 - (30px - 30px * 3/12));
 }
 nav:last-child:nth-child(1n) {
-  float: left;
   margin-right: 30px;
-  clear: none;
+  margin-left: 0;
 }
 nav:last-child:last-child {
   margin-right: 0;
 }
 nav:last-child:nth-child(12n) {
   margin-right: 0;
-  float: right;
-}
-nav:last-child:nth-child(12n + 1) {
-  clear: left;
+  margin-left: auto;
 }
 nav a {
   color: #333;
@@ -163,7 +168,7 @@ nav ul li>a {
 }
 nav ul li>a.active {
   border-bottom: 3px solid;
-  border-color: #e4151f;
+  border-color: #2196f3;
   font-weight: bold;
 }
 nav ul li>a.active>a:hover {

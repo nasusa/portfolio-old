@@ -6,23 +6,25 @@
 	line-height: 60px;
     margin: 10px;
   text-align: center;
+	display: flex;
 }
 nav {
     &:first-child {
-		lost-column: 2/12 no-flex;
+		lost-column: 3/12;
+		overflow: auto;
 	}
     &:nth-child(2) {
-		lost-column: 8/12 no-flex;
+		lost-column: 6/12;
 		overflow: auto;
 		a:hover {
 					border-bottom: 3px solid;
-					border-color: #e4151f;
+					border-color: #1976D2;
 					transition: all linear 0.3s;
 					color: #333;
 				}	
 	}
 	&:last-child {
-		lost-column: 2/12 no-flex;
+		lost-column: 3/12;
 	}
 	a {
 		color: #333;
@@ -54,7 +56,7 @@ nav {
 	
 				&.active {
 					border-bottom: 3px solid;
-					border-color: #e4151f;
+					border-color: #2196F3;
 					font-weight: bold;
 					&>a:hover {
 						border-bottom: 0 !important;

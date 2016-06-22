@@ -18,9 +18,9 @@
   </nav>
   <nav class="social">
     <ul>
-      <li><a href="http://codepen.io/thasmog/"><i class="fa fa-codepen fa-2x" aria-hidden="true"></i></a></li>
       <li><a href="https://www.linkedin.com/in/alanaasmaa"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a></li>
-      <li><a href="http://bitbucket.org/AlanAasmaa/"><i class="fa fa-bitbucket fa-2x" aria-hidden="true"></i></a></li>
+      <li><a href="http://codepen.io/thasmog/"><i class="fa fa-codepen fa-2x" aria-hidden="true"></i></a></li>
+      <li><a href="http://bitbucket.org/AlanAasmaa/"><i class="fa fa-bitbucket fa-2x" aria-hidden="true"></i></a></li>     
     </ul>
   </nav>
 </div>
