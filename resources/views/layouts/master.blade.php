@@ -12,7 +12,7 @@
         @include('errors.list') 
         @yield('content')
         @include('layouts.partials.footer') 
-        <div class="back-to-top">
+        <div title="To Top" class="back-to-top">
             <span class="fa-stack">
                 <i class="fa fa-circle fa-stack-2x"></i>
                 <i class="fa fa-arrow-up fa-stack-1x fa-inverse"></i>

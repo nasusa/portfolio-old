@@ -7,7 +7,14 @@
 
 @stop
 @section('content')
-main stufffff SEE ON CV
+<section>
+    <div class="box center intro">
+    <img src=/img/itsme.gif>
+    <div>
+        Moikka, olen Alan.
+    </div>
+    </div>
+</section>
 @section('scripts')
 
 @stop
