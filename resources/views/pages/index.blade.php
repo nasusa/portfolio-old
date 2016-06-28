@@ -8,95 +8,31 @@
 @stop
 @section('content')
 <section>
-    <div class="box half">
-        <div class="half">
-            <img src="/img/itsme.gif" />
+    <div class="box full header">
+        <h3><span>MOIKKA</h3></span>
+    </div>
+    <div class="half box purple"><h3><span>MOIKKA</h3></span>
+     </div>
+     <div class="half box red"><h3><span>MOIKKA</h3></span>
+     </div>
+     <div class="eighth box"><h3><span>MOIKKA</h3></span>
+     </div>
+</section>
+<section>
+    <div class="quarter box"><img src="/img/itsme.gif"/></span>
+
+    </div>
+    <div class="one">
+        <div class="box">
+            <a href="https://www.linkedin.com/in/alanaasmaa"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a>
         </div>
-        <div class="half">
-            <p>testing</p>
+        <div class="box">
+            <a href="https://www.linkedin.com/in/alanaasmaa"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a>
         </div>
-    </div>
-    <div class="half">
-        <div class="box half">
-            <p>testing</p>
+        <div class="box">
+            <a href="https://www.linkedin.com/in/alanaasmaa"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a>
         </div>
-        <div class="box half">
-            <p>testing</p>
-        </div>
-        <div class="box half">
-            <p>testing</p>
-        </div>
-        <div class="box half">
-            <p>testing</p>
-        </div>
-        <div class="halfrow">
-            <div class="box eighth">
-                <p>1</p>
-            </div>
-            <div class="box eighth">
-                <p>2</p>
-            </div>
-            <div class="box quarter">
-                <p>testing</p>
-            </div>
-            <div class="box eighth">
-                <p>3</p>
-            </div>
-            <div class="box eighth">
-                <p>4</p>
-            </div>
-            <div class="box quarter">
-                <p>testing</p>
-            </div>
-        </div>
-    </div>
-    <div class="box half">
-    <p>testing</p>
-    </div>
-    <div class="box full">
-    <p>testing</p>
-    </div>
-    <div class="box half">
-    <p>testing</p>
-    </div>
-    <div class="box half">
-    <p>testing</p>
-    </div>
-    <div class="box half">
-    <p>testing</p>
-    </div>
-    <div class="box half">
-    <p>testing</p>
-    </div>
-    <div class="box half">
-    <p>testing</p>
-    </div>
-    <div class="box half">
-    <p>testing</p>
-    </div>
-    <div class="box half">
-    <p>testing</p>
-    </div>
-    <div class="box half">
-    <p>testing</p>
-    </div>
-    <div class="box half">
-    <p>testing</p>
-    </div>
-    <div class="box half">
-    <p>testing</p>
-    </div>
-    <div class="box quarter">
-    <p>testing</p>
-    </div>
-    <div class="box quarter">
-    <p>testing</p>
-    </div>
-    <div class="box quarter">
-    <p>testing</p>
-    </div>
-    <div class="box quarter">
-    <p>testing</p>
+
     </div>
 </section>
 @section('scripts')

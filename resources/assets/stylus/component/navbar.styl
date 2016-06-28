@@ -1,49 +1,77 @@
 .navbar {
 	z-index: 1000;
-	height: 60px;
 	line-height: 60px;
   	text-align: center;
-	overflow:hidden;
+	//overflow:hidden;
 	padding: 0px;
-	lost-flex-container: row;
 }
 nav {
     &:first-child {
-		lost-column: 3/12;
-		font-weight: 800;
-		>#logo {
+		+mobile(){
+			lost-column: 1;
+			.hamMenu {
+				display: inline-block;
+			}
+			.nav-trigger {
+				position: absolute;
+				clip: rect(0, 0, 0, 0);
+			}
+			label[for="nav-trigger"] {
+				position: fixed;
+				top: 15px;
+				right: 15px;
+				cursor: pointer;
+			}
+		}
+		lost-column: 1/4 0 0;
+		a {
 			font-weight: 800;
+			text-transform: uppercase;
+			text-decoration : none;
+			color: #333;
 		}
 	}
     &:nth-child(2) {
-		lost-column: 6/12;
+		+mobile(){
+			display: none;
+		}
+		lost-column: 1/2 0 0;
 		a:hover {
-					border-bottom: 2px solid;
-					border-color: #1976D2;
-					transition: all linear 0.3s;
-					color: #333;
-				}	
+			border-bottom: 2px solid;
+			border-color: #1976D2;
+			transition: all linear 0.3s;
+			color: #333;
+		}	
 	}
 	&:last-child {
-		lost-column: 3/12;
+		+mobile(){
+			display: none;
+		}
+		lost-column: 1/4 0 0;
 	}
-	a {
-	color: #333;
-	font-size: 14px;
-	text-transform: uppercase;
-    text-decoration : none;
-    font-weight: 600;
-    
+	.hamMenu {
+		display: none;
 	}
 	ul {
 		display: inline-flex;
-		flex-wrap: wrap;
 		list-style: none;
+		a {
+			color: #333;
+			font-size: 14px;
+			text-transform: uppercase;
+			text-decoration : none;
+			font-weight: 600;
+		}
 		li {
-			
-			position: relative;
 			&:hover ul{
 				display: block;
+			}
+			ul {
+				display: none;
+				position: absolute;
+				padding: 10px;
+				background-color: white;
+				z-index: 1000;
 			}
 			&>a {
 				display: flex;
@@ -55,18 +83,10 @@ nav {
 				&.active {
 					border-bottom: 2px solid;
 					border-color: #2196F3;
-					font-weight: bold;
 				}
 				i {
 					line-height: 10px;
 				}	
-			}
-			ul {
-				display: none;
-				position: fixed;
-				padding: 10px;
-				background-color: white;
-				z-index: 1000;
 			}
 		}
 	}	
