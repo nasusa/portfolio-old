@@ -19,7 +19,7 @@ elixir(function(mix) {
     ])
 
     .scripts([
-        'components/*.js',
+        'components/**/*.js',
         'app.js'
     ])
 

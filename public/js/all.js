@@ -52,7 +52,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 2);
+/******/ 	return __webpack_require__(__webpack_require__.s = 3);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -81,9 +81,27 @@
 
 /***/ },
 /* 2 */
+/***/ function(module, exports) {
+
+	$(document).ready(function(){
+	    $('input[type="checkbox"]').click(function(){
+	        if($(this).attr("value")=="nav-trigger"){
+	            $("#nav").toggle();
+	        }
+	    });
+	    $( "#nav-trigger" ).click(function() {
+	        $( "#nav" ).toggle( "slow", function() {
+	            // Animation complete.
+	        });
+	    });
+	});
+
+/***/ },
+/* 3 */
 /***/ function(module, exports, __webpack_require__) {
 
 	__webpack_require__(1);
+	__webpack_require__(2);
 	module.exports = __webpack_require__(0);
 
 

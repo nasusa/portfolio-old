@@ -8,11 +8,10 @@
       <i class="fa fa-bars" aria-hidden="true"></i>
     </label>
   </nav>
-  
   <nav id="nav">
     <ul>
       <li><a class="{!! set_active('/') !!}" href="">Minusta</a></li>
-      <li><a href="/" aria-haspopup="true">Portfolio</a>
+      <li><a href="/" aria-haspopup="true">Portfolio ▼</a>
         <ul>
           <li><a href="/">Design</a></li>
           <li><a href="/">HTML</a></li>
@@ -21,7 +20,6 @@
         </ul>
       </li>
       <li><a href="/">Ota Yhteyttä</a></li>
-      <li><a href="/">Yhteyttä</a></li>
       <li><a href="/">Yhteyttä</a></li>
     </ul>
   </nav>
