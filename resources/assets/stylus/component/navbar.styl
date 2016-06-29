@@ -2,40 +2,13 @@
 	z-index: 1000;
 	line-height: 60px;
   	text-align: center;
-	//overflow:hidden;
+
 	padding: 0px;
 }
 nav {
-    &:first-child {
-		+mobile(){
-			lost-column: 1;
-			.hamMenu {
-				display: inline-block;
-			}
-			.nav-trigger {
-				position: absolute;
-				clip: rect(0, 0, 0, 0);
-			}
-			label[for="nav-trigger"] {
-				position: fixed;
-				top: 15px;
-				right: 15px;
-				cursor: pointer;
-			}
-		}
-		lost-column: 1/4 0 0;
-		a {
-			font-weight: 800;
-			text-transform: uppercase;
-			text-decoration : none;
-			color: #333;
-		}
-	}
+	lost-column: 1/4;
     &:nth-child(2) {
-		+mobile(){
-			display: none;
-		}
-		lost-column: 1/2 0 0;
+		lost-column: 2/4;
 		a:hover {
 			border-bottom: 2px solid;
 			border-color: #1976D2;
@@ -43,25 +16,17 @@ nav {
 			color: #333;
 		}	
 	}
-	&:last-child {
-		+mobile(){
-			display: none;
-		}
-		lost-column: 1/4 0 0;
-	}
-	.hamMenu {
-		display: none;
-	}
-	ul {
-		display: inline-flex;
-		list-style: none;
-		a {
+	a {
 			color: #333;
 			font-size: 14px;
 			text-transform: uppercase;
 			text-decoration : none;
 			font-weight: 600;
-		}
+	}
+	ul {
+		display: inline-flex;
+		list-style: none;
+		margin: 0;
 		li {
 			&:hover ul{
 				display: block;
@@ -72,13 +37,14 @@ nav {
 				padding: 10px;
 				background-color: white;
 				z-index: 1000;
+				&:before li {
+					content: '>;';
+				}
 			}
 			&>a {
-				display: flex;
 				margin: 0 10px;
 				border-bottom: 2px solid;
 				border-color: transparent;
-				color: #000;
 				line-height: 20px;
 				&.active {
 					border-bottom: 2px solid;
@@ -87,6 +53,37 @@ nav {
 				i {
 					line-height: 10px;
 				}	
+			}
+		}
+	}
+	+mobile(){
+		lost-column: 1 !important;
+		&:last-child {
+			display:none;
+		}
+		#nav-trigger {
+			//display: none;
+		}
+		label[for="nav-trigger"] {
+			position: absolute;
+			top: 10px;
+			right: 15px;
+			cursor: pointer;
+		}
+		#nav-trigger:checked {
+			display:none;
+		}
+		ul {
+			flex-wrap: wrap;
+			padding: 0;
+			display: block;
+			line-height: 40px;
+			li ul {
+				position: inherit;
+				background-color: #2196F3;
+				a {
+					color:#fff;
+				}
 			}
 		}
 	}	
