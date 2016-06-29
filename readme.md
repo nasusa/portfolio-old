@@ -2,6 +2,8 @@
 
 Täältä voitte tutkia minun edistymistä.
 
+
+### Mitä sydeemejä käydän cv'ssäni. 
 * Laravel Framework
 * Stylus PostCSS
 * Lost Grid
@@ -11,6 +13,15 @@ Täältä voitte tutkia minun edistymistä.
 * HTML5
 * PHP
 * JS
+* Rupture
 
+
+License
+----
+
+MIT
+
+
+**Free Software, Hell Yeah!**
 
 
