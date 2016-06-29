@@ -3,7 +3,7 @@
     <span>
       <a href="http://www.alanaasmaa.eu/" title="alan aasmaa" id="logo">alan aasmaa</a>
     </span>
-    <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+    <input type="checkbox" id="nav-trigger" />
     <label for="nav-trigger">
       <i class="fa fa-bars" aria-hidden="true"></i>
     </label>

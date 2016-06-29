@@ -23,6 +23,12 @@ nav {
 			text-decoration : none;
 			font-weight: 600;
 	}
+	#nav-trigger {
+			display: none;
+	}
+	label[for="nav-trigger"] {
+			display: none;
+	}
 	ul {
 		display: inline-flex;
 		list-style: none;
@@ -53,7 +59,7 @@ nav {
 			}
 		}
 	}
-	+tablet(), +mobile(){
+	+below(1000px){
 		lost-column: 1 !important;
 		&:last-child {
 			display:none;
@@ -61,10 +67,8 @@ nav {
 		&:nth-child(2) {
 			display:none;
 		}
-		#nav-trigger {
-			display: none;
-		}
 		label[for="nav-trigger"] {
+			display: block;
 			position: absolute;
 			top: 10px;
 			right: 15px;
