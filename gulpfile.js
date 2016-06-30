@@ -2,6 +2,7 @@ var elixir = require('laravel-elixir');
 var rupture = require('rupture');
 
 require('laravel-elixir-stylus');
+require('laravel-elixir-imagemin');
 
 elixir.config.sourcemaps = true;
 
@@ -22,6 +23,11 @@ elixir(function(mix) {
         'components/**/*.js',
         'app.js'
     ])
+    .imagemin({
+        optimizationLevel: 3,
+        progressive: true,
+        interlaced: true
+    })
 
     .browserSync({ 
         proxy: 'cv.dev',

@@ -1,3 +1,3 @@
-<footer class="box">
+<footer class="container box">
     <p>© Alan Aasmaa</p>
 </footer>
