@@ -10,7 +10,7 @@
   </nav>
   <nav id="nav">
     <ul>
-      <li><a class="{!! set_active('/') !!}" href="">Minusta</a></li>
+      <li><a class="{!! set_active('/') !!}" href="">Etusivu</a></li>
       <li><a href="/" aria-haspopup="true">Portfolio ▼</a>
         <ul>
           <li><a href="/">Design</a></li>
@@ -19,8 +19,8 @@
           <li><a href="/">Java</a></li>
         </ul>
       </li>
-      <li><a href="/">Ota Yhteyttä</a></li>
-      <li><a href="/">Yhteyttä</a></li>
+      <li><a href="/">Palvelut</a></li>
+      <li><a href="/">Minusta</a></li>
     </ul>
   </nav>
   <nav>

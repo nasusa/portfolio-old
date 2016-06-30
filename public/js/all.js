@@ -84,11 +84,6 @@
 /***/ function(module, exports) {
 
 	$(document).ready(function(){
-	    $('input[type="checkbox"]').click(function(){
-	        if($(this).attr("value")=="nav-trigger"){
-	            $("#nav").toggle();
-	        }
-	    });
 	    $( "#nav-trigger" ).click(function() {
 	        $( "#nav" ).toggle( "slow", function() {
 	            // Animation complete.
