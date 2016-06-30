@@ -23,6 +23,54 @@
         </div>
     </div>
 </section>
+<section class="container box center">
+    <div class="full title">
+        <h4>Palvelut</h4>
+        <p>Jotain kivaa tekstii</p>
+    </div>
+    <div class="third">
+        <figure>
+            <img src="http://fakeimg.pl/300x200/">
+            <figcaption>Jotain kivaa tekstii</figcaption>
+        </figure>
+    </div>
+    <div class="third">
+        <figure>
+            <img src="http://fakeimg.pl/300x200/">
+            <figcaption>Jotain kivaa tekstii</figcaption>
+        </figure>
+    </div>
+    <div class="third e">
+        <figure>
+            <img src="http://fakeimg.pl/300x200/">
+            <figcaption>Jotain kivaa tekstii</figcaption>
+        </figure>
+    </div>
+    <div class="third">
+        <figure>
+            <img src="http://fakeimg.pl/300x200/">
+            <figcaption>Jotain kivaa tekstii</figcaption>
+        </figure>
+    </div>
+    <div class="third">
+        <figure>
+            <img src="http://fakeimg.pl/300x200/">
+            <figcaption>Jotain kivaa tekstii</figcaption>
+        </figure>
+    </div>
+    <div class="third e">
+        <figure>
+            <img src="http://fakeimg.pl/300x200/">
+            <figcaption>Jotain kivaa tekstii</figcaption>
+        </figure>
+    </div>
+</section>
+<section class="container center">
+    <div class="full box title">
+        <h4>Technology</h4>
+        <p>Jotain hienoja kuvii mitä osaan ?</p>
+    </div>
+</section>
 @section('scripts')
 
 @stop
