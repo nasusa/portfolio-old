@@ -1,4 +1,4 @@
-<section class="navbar box">
+<section class="navbar box container">
   <nav>
     <span>
       <a href="http://www.alanaasmaa.eu/" title="alan aasmaa" id="logo">alan aasmaa</a>

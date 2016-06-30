@@ -7,46 +7,41 @@
 
 @stop
 @section('content')
-<section>
-    <div class="full box">
-        <h4><span>Full box is bix one</h4></span>
+<section class="container">
+    <div class="full box center">
+        <h4>Full box is bix one</h4>
     </div>
 </section>
-<section>
-    <div class="half box"><h4><span>Half is a bit smaller</h4></span>
+<section class="container">
+    <div class="half box">
+    <h4>Half is a bit smaller</h4>
     <p>These 1/3 should be on the same line</p>
     </div>
-    <div class="half">
-        <div class="quarter box"><h4><span>1/3</h4></span>
-        </div>
-        <div class="quarter box"><h4><span>1/3</h4></span>
-        </div>
+    <div class="quarter box"><h4>1/4</h4>
     </div>
-</section>
-<section>
-    <div class="one box"><h4><span>1</h4></span>
+    <div class="quarter box e"><h4>1/4</h4>
     </div>
-    <div class="one box"><h4><span>2</h4></span>
+    <div class="third box"><h4>1/3</h4>
     </div>
-    <div class="one box"><h4><span>3</h4></span>
+    <div class="one box"><h4>1</h4>
     </div>
-    <div class="one box"><h4><span>4</h4></span>
+    <div class="one box"><h4>2</h4>
     </div>
-    <div class="one box"><h4><span>5</h4></span>
+    <div class="one box"><h4>3</h4>
     </div>
-    <div class="one box"><h4><span>6</h4></span>
+    <div class="one box"><h4>4</h4>
     </div>
-    <div class="one box"><h4><span>7</h4></span>
+    <div class="one box"><h4>5</h4>
     </div>
-    <div class="one box"><h4><span>8</h4></span>
+    <div class="quarter box e"><h4>1/3</h4>
     </div>
-    <div class="one box"><h4><span>9</h4></span>
+    <div class="quarter box"><h4>1/4</h4>
     </div>
-    <div class="one box"><h4><span>10</h4></span>
+    <div class="quarter box"><h4>1/4</h4>
     </div>
-    <div class="one box"><h4><span>11</h4></span>
+    <div class="quarter box"><h4>1/4</h4>
     </div>
-    <div class="one box"><h4><span>12</h4></span>
+    <div class="quarter box"><h4>1/4</h4>
     </div>
 </section>
 @section('scripts')

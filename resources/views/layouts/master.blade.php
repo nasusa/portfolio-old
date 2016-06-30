@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="no-js">
+<html>
     <head>
         @include('layouts.partials.meta') 
         <title>Alan Aasmaa - @yield('title')</title>
