@@ -121,6 +121,9 @@ hr {
 .orange {
   background-color: rgba(210,117,25,0.9);
 }
+.whiteText {
+  color: #fff;
+}
 @media only screen and (min-width: 1000px) {
   .e {
     margin-right: 0 !important;
@@ -165,13 +168,6 @@ hr {
   align-items: center;
   -webkit-box-pack: center;
   justify-content: center;
-}
-.caps {
-  text-transform: uppercase;
-}
-.sticky {
-  line-height: 0.1;
-  margin: 0;
 }
 .back-to-top {
   position: fixed;
@@ -344,6 +340,24 @@ footer {
   justify-content: center;
   display: -webkit-box;
   display: flex;
+}
+.homepage h1 {
+  text-transform: uppercase;
+  margin: 2.1rem 0 0 0;
+}
+.homepage h5 {
+  margin: 0 0 1rem 0;
+}
+.homepage .button {
+  background-color: #212121;
+  border: none;
+  color: #fff;
+  padding: 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  width: 80px;
 }
 .flashmessage {
   color: #fff;
