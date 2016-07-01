@@ -131,6 +131,18 @@ hr {
 .fourth:last-child {
   margin-right: 0;
 }
+.eight {
+  -webkit-box-flex: 0;
+  flex: 0 0 auto;
+  width: calc(99.99% * 1/8 - (15px - 15px * 1/8));
+}
+.eight:nth-child(1n) {
+  margin-right: 15px;
+  margin-left: 0;
+}
+.eight:last-child {
+  margin-right: 0;
+}
 @media only screen and (min-width: 1000px) {
   .e {
     margin-right: 0 !important;
@@ -158,6 +170,15 @@ hr {
 }
 .orange {
   background-color: rgba(210,117,25,0.9);
+}
+.yellow {
+  background-color: rgba(210,210,25,0.9);
+}
+.lime {
+  background-color: rgba(25,210,117,0.9);
+}
+.black {
+  background-color: rgba(33,33,33,0.9);
 }
 .whiteText {
   color: #fff;
@@ -372,11 +393,21 @@ footer {
   width: 90px;
 }
 .whatDo {
-  padding-left: 10px;
-  padding-right: 10px;
+  padding: 15px;
+}
+.whatDo:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  -webkit-transition: -webkit-transform 0.2s linear;
+  transition: -webkit-transform 0.2s linear;
+  transition: transform 0.2s linear;
+  transition: transform 0.2s linear, -webkit-transform 0.2s linear;
 }
 .whatDo p {
   color: #727272;
+}
+.whatDo i {
+  color: #1976d2;
 }
 .flashmessage {
   color: #fff;
@@ -413,6 +444,10 @@ footer {
 .fa-codepen:hover {
   -webkit-transform: scale(1.5);
   transform: scale(1.5);
+  -webkit-transition: -webkit-transform 0.2s linear;
+  transition: -webkit-transform 0.2s linear;
+  transition: transform 0.2s linear;
+  transition: transform 0.2s linear, -webkit-transform 0.2s linear;
 }
 .fa-linkedin {
   color: #0077b5;
@@ -420,6 +455,10 @@ footer {
 .fa-linkedin:hover {
   -webkit-transform: scale(1.5);
   transform: scale(1.5);
+  -webkit-transition: -webkit-transform 0.2s linear;
+  transition: -webkit-transform 0.2s linear;
+  transition: transform 0.2s linear;
+  transition: transform 0.2s linear, -webkit-transform 0.2s linear;
 }
 .fa-bitbucket {
   color: #205081;
@@ -427,6 +466,10 @@ footer {
 .fa-bitbucket:hover {
   -webkit-transform: scale(1.5);
   transform: scale(1.5);
+  -webkit-transition: -webkit-transform 0.2s linear;
+  transition: -webkit-transform 0.2s linear;
+  transition: transform 0.2s linear;
+  transition: transform 0.2s linear, -webkit-transform 0.2s linear;
 }
 @import url("https://fonts.googleapis.com/css?family=RobotoMono");
 
