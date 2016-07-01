@@ -1,4 +1,4 @@
-<footer class="container box">
+<footer class="container box blue whiteText">
     <div class="fourth">
     <i class="fa fa-globe" aria-hidden="true"><p>Im From Estonia</p></i>
     </div>
@@ -12,6 +12,6 @@
     4
     </div>
     <div class="footerInfo">
-        <a href="/terms-and-conditions">Terms of Use</a> . Copyright © 2016 Alan Aasmaa®
+        <a href="/terms-and-conditions">Terms of Use</a> . Copyright &copy; <?php echo date("Y") ?> Alan Aasmaa®
     </div>
 </footer>

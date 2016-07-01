@@ -63,6 +63,9 @@ strong {
 small {
   font-size: 75%;
 }
+.title {
+  margin-bottom: 1.5rem;
+}
 .title h4 {
   margin: 1.14rem 0 0 0;
 }
@@ -350,14 +353,14 @@ footer {
   color: inherit;
   text-decoration: none;
 }
-.homepage h1 {
+.hero h1 {
   margin: 2.1rem 0 0 0;
   font-weight: bold;
 }
-.homepage h5 {
+.hero h5 {
   margin: 0 0 1rem 0;
 }
-.homepage .button {
+.hero .button {
   background-color: #212121;
   border: none;
   color: #fff;
@@ -367,6 +370,13 @@ footer {
   display: inline-block;
   font-size: 16px;
   width: 90px;
+}
+.whatDo {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.whatDo p {
+  color: #727272;
 }
 .flashmessage {
   color: #fff;
