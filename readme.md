@@ -14,14 +14,3 @@ Täältä voitte tutkia minun edistymistä.
 * PHP
 * JS
 * Rupture
-
-
-License
-----
-
-MIT
-
-
-**Free Software, Hell Yeah!**
-
-
