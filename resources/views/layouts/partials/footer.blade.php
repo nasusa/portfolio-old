@@ -28,13 +28,13 @@
     <div class="fourth">
     <ul>
             <li>
-                <i class="fa fa-steam" aria-hidden="true"></i>&nbsp; I'm at <a href="http://steamcommunity.com/id/thasmog">Steam</a>
+                <i class="fa fa-linkedin" aria-hidden="true"></i>&nbsp; Connect with my <a href="https://www.linkedin.com/in/alanaasmaa">LinkedIn</a>
             </li>
             <li>
-                <i class="fa fa-steam" aria-hidden="true"></i>&nbsp; I'm at <a href="http://steamcommunity.com/id/thasmog">Steam</a>
+                <i class="fa fa-bitbucket" aria-hidden="true"></i>&nbsp; Codes at <a href="http://bitbucket.org/AlanAasmaa/">Bitbucket</a>
             </li>
             <li>
-                <i class="fa fa-steam" aria-hidden="true"></i>&nbsp; I'm at <a href="http://steamcommunity.com/id/thasmog">Steam</a>
+                <i class="fa fa-codepen" aria-hidden="true"></i>&nbsp; Teach me at <a href="http://codepen.io/thasmog/">Codepen</a>
             </li>
         </ul>
     </div>
@@ -47,7 +47,7 @@
                 <i class="fa fa-youtube" aria-hidden="true"></i>&nbsp; Watch me from <a href="https://www.youtube.com/c/thasmog">YouTube</a>
             </li>
             <li>
-                <i class="fa fa-steam" aria-hidden="true"></i>&nbsp; I'm at <a href="http://steamcommunity.com/id/thasmog">Steam</a>
+                <i class="fa fa-facebook" aria-hidden="true"></i>&nbsp; Stalk me from <a href="https://www.facebook.com/alan.aasmaa">Facebook</a>
             </li>
         </ul>
     </div>

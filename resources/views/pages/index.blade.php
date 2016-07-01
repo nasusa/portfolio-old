@@ -75,7 +75,6 @@
     <div class="full title">
         <h4>Portfolio</h4>
         <p>Jotain kivaa tekstii</p>
-        <hr>
     </div>
     <div class="third">
         <figure>
