@@ -72,6 +72,9 @@ small {
 .title p {
   margin: 0;
 }
+a {
+  text-decoration: none;
+}
 hr {
   border: 0;
   border-top: 1px solid #b6b6b6;
@@ -199,7 +202,7 @@ hr {
   bottom: 1em;
   right: 1em;
   display: inline-block;
-  color: #00bcd4;
+  color: rgba(25,118,210,0.9);
   font-size: 1.5em;
 }
 @media only screen and (max-width: 400px) {
@@ -210,7 +213,7 @@ hr {
 }
 .back-to-top:hover {
   cursor: pointer;
-  color: #1976d2;
+  color: #212121;
 }
 .dark-primary-color {
   background: #1976d2;
@@ -278,7 +281,6 @@ nav a {
   color: #333;
   font-size: 14px;
   text-transform: uppercase;
-  text-decoration: none;
   font-weight: 600;
 }
 nav #nav-trigger {
@@ -365,14 +367,28 @@ footer {
   display: -webkit-box;
   display: flex;
   text-align: center;
+  box-sizing: border-box;
+  display: flex;
+}
+footer .fourth {
+  text-align: left;
+}
+footer .fourth ul {
+  padding: 10px 10px 0 10px;
+  margin-left: 0px;
+  list-style-type: none;
+}
+footer .fourth ul a {
+  color: #fff;
+  font-weight: 600;
 }
 .footerInfo {
+  padding-top: 10px;
   text-transform: uppercase;
   font-weight: 800;
 }
 .footerInfo a {
   color: inherit;
-  text-decoration: none;
 }
 .hero h1 {
   margin: 2.1rem 0 0 0;
