@@ -1,5 +1,6 @@
 var elixir = require('laravel-elixir');
-var rupture = require('rupture');
+    rupture = require('rupture');
+    lost = require('lost');
 
 require('laravel-elixir-stylus');
 require('laravel-elixir-imagemin');

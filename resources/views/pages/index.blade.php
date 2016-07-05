@@ -42,7 +42,7 @@
             <p>Mauris sed libero. Suspendisse facilisis nulla in lacinia laoreet, lorem velit accumsan velit vel mattis libero nisl et sem. Proin interdum maecenas massa turpis sagittis in, interdum non lobortis vitae massa.</p>
         </div>
     </div>
-    <div class="third e">
+    <div class="third">
         <div class="whatDo">
             <i class="fa fa-laptop fa-3x" aria-hidden="true"></i>
             <h5>Computer repairs</h5>
@@ -63,7 +63,7 @@
             <p>Mauris sed libero. Suspendisse facilisis nulla in lacinia laoreet, lorem velit accumsan velit vel mattis libero nisl et sem. Proin interdum maecenas massa turpis sagittis in, interdum non lobortis vitae massa.</p>
         </div>
     </div>
-    <div class="third e">
+    <div class="third">
         <div class="whatDo">
             <i class="fa fa-heart fa-3x" aria-hidden="true"></i>
             <h5>And more..</h5>
@@ -76,41 +76,43 @@
         <h4>Portfolio</h4>
         <p>Jotain kivaa tekstii</p>
     </div>
-    <div class="third">
-        <figure>
-            <img src="http://fakeimg.pl/300x200/">
-            <figcaption>Jotain kivaa tekstii</figcaption>
-        </figure>
-    </div>
-    <div class="third">
-        <figure>
-            <img src="http://fakeimg.pl/300x200/">
-            <figcaption>Jotain kivaa tekstii</figcaption>
-        </figure>
-    </div>
-    <div class="third e">
-        <figure>
-            <img src="http://fakeimg.pl/300x200/">
-            <figcaption>Jotain kivaa tekstii</figcaption>
-        </figure>
-    </div>
-    <div class="third">
-        <figure>
-            <img src="http://fakeimg.pl/300x200/">
-            <figcaption>Jotain kivaa tekstii</figcaption>
-        </figure>
-    </div>
-    <div class="third">
-        <figure>
-            <img src="http://fakeimg.pl/300x200/">
-            <figcaption>Jotain kivaa tekstii</figcaption>
-        </figure>
-    </div>
-    <div class="third e">
-        <figure>
-            <img src="http://fakeimg.pl/300x200/">
-            <figcaption>Jotain kivaa tekstii</figcaption>
-        </figure>
+    <div class="full row">
+        <div class="third">
+            <figure>
+                <img src="http://fakeimg.pl/300x200/">
+                <figcaption>Jotain kivaa tekstii</figcaption>
+            </figure>
+        </div>
+        <div class="third">
+            <figure>
+                <img src="http://fakeimg.pl/300x200/">
+                <figcaption>Jotain kivaa kirjoitus</figcaption>
+            </figure>
+        </div>
+        <div class="third">
+            <figure>
+                <img src="http://fakeimg.pl/300x200/">
+                <figcaption>Jotain kivaa tekstii</figcaption>
+            </figure>
+        </div>
+        <div class="third">
+            <figure>
+                <img src="http://fakeimg.pl/300x200/">
+                <figcaption>Jotain kivaa kirjoitustaaadfasdfasdfsd</figcaption>
+            </figure>
+        </div>
+        <div class="third">
+            <figure>
+                <img src="http://fakeimg.pl/300x200/">
+                <figcaption>Jotain kivaa tekstii</figcaption>
+            </figure>
+        </div>
+        <div class="third">
+            <figure>
+                <img src="http://fakeimg.pl/300x200/">
+                <figcaption>Jotain kivaa tekstii</figcaption>
+            </figure>
+        </div>
     </div>
 </section>
 @section('scripts')

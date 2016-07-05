@@ -14,3 +14,6 @@
 Route::get('/', function () {
     return view('pages.index');
 });
+Route::get('lost', function () {
+    return view('pages.lost');
+});
