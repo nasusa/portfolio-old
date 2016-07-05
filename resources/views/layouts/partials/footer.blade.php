@@ -38,7 +38,7 @@
             </li>
         </ul>
     </div>
-    <div class="fourth e">
+    <div class="fourth">
     <ul>
             <li>
                 <i class="fa fa-steam" aria-hidden="true"></i>&nbsp; I'm at <a href="http://steamcommunity.com/id/thasmog">Steam</a>
