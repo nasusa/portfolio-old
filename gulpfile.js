@@ -1,4 +1,5 @@
 var elixir = require('laravel-elixir');
+    postStylus = require('poststylus')
     rupture = require('rupture');
     lost = require('lost');
 
@@ -11,9 +12,7 @@ elixir(function(mix) {
 
 	mix
     .stylus('app.styl', null, {
-        use: [
-            require('poststylus')(['lost']), rupture()
-        ]
+        use: [postStylus(['lost', 'rupture'])]
     })
 
     .version([

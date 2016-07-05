@@ -76,7 +76,6 @@
         <h4>Portfolio</h4>
         <p>Jotain kivaa tekstii</p>
     </div>
-    <div class="full row">
         <div class="third">
             <figure>
                 <img src="http://fakeimg.pl/300x200/">
@@ -112,7 +111,6 @@
                 <img src="http://fakeimg.pl/300x200/">
                 <figcaption>Jotain kivaa tekstii</figcaption>
             </figure>
-        </div>
     </div>
 </section>
 @section('scripts')
