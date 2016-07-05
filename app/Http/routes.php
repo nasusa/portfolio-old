@@ -17,3 +17,7 @@ Route::get('/', function () {
 Route::get('lost', function () {
     return view('pages.lost');
 });
+
+Route::auth();
+
+Route::get('/home', 'HomeController@index');
