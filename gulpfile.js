@@ -1,6 +1,8 @@
-var elixir = require('laravel-elixir');
-    rupture = require('rupture');
-    lost = require('lost');
+var elixir = require('laravel-elixir'),
+    poststylus = require('poststylus'),
+    rupture = require('rupture'),
+    lost = require('lost'),
+    axis = require('axis');
 
 require('laravel-elixir-stylus');
 require('laravel-elixir-imagemin');
@@ -12,7 +14,9 @@ elixir(function(mix) {
 	mix
     .stylus('app.styl', null, {
         use: [
-            require('poststylus')(['lost']), rupture()
+            axis(),
+            rupture(),
+            poststylus(['lost'])
         ]
     })
 
