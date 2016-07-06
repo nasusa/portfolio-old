@@ -15,7 +15,7 @@ class CreatePortfoliosTable extends Migration
         Schema::create('portfolios', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('published')->default(0);
-            $table->string('image')->default('http://fakeimg.pl/300x200/');
+            $table->string('image')->default('http://fakeimg.pl/300x200/?text=No_Image');
             $table->date('started')->default(0000-00-00);
             $table->date('finished')->default(0000-00-00);
             $table->timestamps();

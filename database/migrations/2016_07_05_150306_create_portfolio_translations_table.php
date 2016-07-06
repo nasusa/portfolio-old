@@ -15,7 +15,7 @@ class CreatePortfolioTranslationsTable extends Migration
         Schema::create('portfolio_translations', function (Blueprint $table) {
             $table->increments('id');
 
-            $table->string('language');
+            $table->string('locale')->index();;
 
             $table->string('title')->default('');
             $table->string('description', 170)->default('');

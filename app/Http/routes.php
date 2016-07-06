@@ -11,13 +11,10 @@
 |
 */
 
-Route::get('/', function () {
-    return view('pages.index');
-});
-Route::get('lost', function () {
-    return view('pages.lost');
-});
+Route::group(['middleware' => 'web'], function () {
+    Route::auth();
 
-Route::auth();
+    Route::get('/', 'PagesController@index');
+    Route::get('portfolio', 'PagesController@portfolio');
 
-Route::get('/home', 'HomeController@index');
+});

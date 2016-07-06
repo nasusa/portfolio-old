@@ -3,19 +3,13 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
-use App\Support\Translateable;
+use \Dimsav\Translatable\Translatable;
 
 class Portfolio extends Model
 {
     use Translateable;
 
-    protected $fillable = ['published', 'image', 'started', 'finished'];
+    public $translatedAttributes = ['name', 'text'];
 
-    public function translation($language = null)
-    {
-        if ($language == null){
-            $language = App::getLocale();
-        }
-        return $this->hasMany('App\PortfolioTranslation')->where('language', '=', $language);
-    }
+    
 }

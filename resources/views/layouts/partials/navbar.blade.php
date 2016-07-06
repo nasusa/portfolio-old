@@ -10,8 +10,8 @@
   </nav>
   <nav id="nav">
     <ul>
-      <li><a class="{!! set_active('/') !!}" href="">Etusivu</a></li>
-      <li><a href="/" aria-haspopup="true">Portfolio</a>
+      <li><a class="{!! set_active('/') !!}" href="/">Etusivu</a></li>
+      <li><a class="{!! set_active('portfolio') !!}" href="{{ url('portfolio')}}" aria-haspopup="true">Portfolio</a>
         <ul>
           <li><a href="/">Design</a></li>
           <li><a href="/">HTML</a></li>
