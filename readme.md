@@ -1,12 +1,14 @@
 # Alan Aasmaa Portfolio/CV
 
-Täältä voitte tutkia minun edistymistä.
+Here you can see how i'm building my Portfolio !
 
 
-### Mitä sydeemejä käydän cv'ssäni. 
+### I use these awesome systems. 
 * Laravel Framework
 * Stylus PostCSS
+* Rupture
 * Lost Grid
+* Axis
 * Font Awesome
 * Flexbox
 * CSS3
