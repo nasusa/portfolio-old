@@ -1,6 +1,6 @@
 @extends('layouts.master')
 
-@section('title', 'Etusivu')
+@section('title', 'Portfolio')
 @section('description', 'This is a description')
 @section('keywords', 'These, are, keywords')
 @section('styles')
