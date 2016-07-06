@@ -16,3 +16,4 @@ Here you can see how i'm building my Portfolio !
 * PHP
 * JS
 * Rupture
+* MySQL
