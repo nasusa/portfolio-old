@@ -1,10 +1,8 @@
-html {
-  line-height: 1.5;
-  font-family: 'Roboto Mono', monospace;
-  font-weight: normal;
-  color: #212121;
+body {
   background: url(/images/bg.jpg) no-repeat center center fixed; 
   background-size: cover;
+  font-family: 'Roboto Mono', monospace;
+  color: #212121;
 }
 h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
@@ -78,6 +76,11 @@ img {
   lost-center: 1140px;
   lost-utility: clearfix;
 }
+.row {
+  lost-utility: clearfix;
+  flex-flow: row wrap;
+  display: flex;
+}
 .full {
   lost-column: 1;
 }
@@ -102,44 +105,14 @@ img {
 }
 .box {
   margin-top: 10px;
-  background-color: rgba(255,255,255,.9);
+  background-color: $whitetrans;
   box-shadow: 1px 1.732px 5px 0px rgba(4,5,6,.2);
   padding: 15px;
-  box-sizing: border-box;
   word-wrap: break-word;
 }
-.dark-primary-color    { background: #1976D2; }
-.default-primary-color { background: #2196F3; }
-.light-primary-color   { background: #BBDEFB; }
-.text-primary-color    { color: #FFFFFF; }
-.accent-color          { background: #00BCD4; }
-.primary-text-color    { color: #212121; }
-.secondary-text-color  { color: #727272; }
-.divider-color         { border-color: #B6B6B6; }
 
-.blue {
-  background-color: rgba(25,118,210,.9);
-}
-.red {
-  background-color: rgba(210,25,26,.9);
-}
-.green {
-  background-color: rgba(118,210,25,.9);
-}
-.magneta {
-  background-color: rgba(210,25,118,.9);
-}
-.orange {
-  background-color: rgba(210,117,25,.9);
-}
-.yellow {
-  background-color: rgba(210,210,25,.9);
-}
-.lime {
-  background-color: rgba(25,210,117,.9);
-}
-.black {
-  background-color: rgba(33,33,33,.9);
+.blueBg {
+  background-color: $bluetrans;
 }
 .whiteText {
   color: white;
@@ -148,11 +121,7 @@ img {
 .center {
     text-align: center;
 }
-.vcenter {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+
 .back-to-top {
   +mobile() {
     bottom: 0.5em;
@@ -162,7 +131,7 @@ img {
   bottom: 1em;
   right: 1em;
   display: inline-block;  
-  color: rgba(25,118,210,.9);
+  color: $bluetrans;
   font-size: 1.5em;
   &:hover{
     cursor: pointer;

@@ -1,4 +1,4 @@
-<footer class="container box blue whiteText">
+<footer class="container box blueBg whiteText">
     <div class="fourth">
         <ul>
             <li>

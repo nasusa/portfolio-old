@@ -8,7 +8,7 @@
 @stop
 @section('content')
 <section class="container">
-    <div class="full box blue vcenter hero">
+    <div class="full box blueBg hero">
         <div class="center whiteText">
             <hr>
             <h1>Teen sun duunit</h1>
@@ -28,46 +28,48 @@
         <h4>Mitä mä teen ?</h4>
         <p>Jotain kivaa tekstii</p>
     </div>
-    <div class="third">
-        <div class="whatDo">
-            <i class="fa fa-code fa-3x" aria-hidden="true"></i>
-            <h5>Web Development</h5>
-            <p>Mauris sed libero. Suspendisse facilisis nulla in lacinia laoreet, lorem velit accumsan velit vel mattis libero nisl et sem. Proin interdum maecenas massa turpis sagittis in, interdum non lobortis vitae massa.</p>
+    <div class="row">
+        <div class="third">
+            <div class="whatDo">
+                <i class="fa fa-code fa-3x" aria-hidden="true"></i>
+                <h5>Web Development</h5>
+                <p>Mauris sed libero. Suspendisse facilisis nulla in lacinia laoreet, lorem velit accumsan velit vel mattis libero nisl et sem. Proin interdum maecenas massa turpis sagittis in, interdum non lobortis vitae massa.</p>
+            </div>
         </div>
-    </div>
-    <div class="third">
-        <div class="whatDo">
-            <i class="fa fa-mobile fa-3x" aria-hidden="true"></i>
-            <h5>Phone Repairs</h5>
-            <p>Mauris sed libero. Suspendisse facilisis nulla in lacinia laoreet, lorem velit accumsan velit vel mattis libero nisl et sem. Proin interdum maecenas massa turpis sagittis in, interdum non lobortis vitae massa.</p>
+        <div class="third">
+            <div class="whatDo">
+                <i class="fa fa-mobile fa-3x" aria-hidden="true"></i>
+                <h5>Phone Repairs</h5>
+                <p>Mauris sed libero. Suspendisse facilisis nulla in lacinia laoreet, lorem velit accumsan velit vel mattis libero nisl et sem. Proin interdum maecenas massa turpis sagittis in, interdum non lobortis vitae massa.</p>
+            </div>
         </div>
-    </div>
-    <div class="third">
-        <div class="whatDo">
-            <i class="fa fa-laptop fa-3x" aria-hidden="true"></i>
-            <h5>Computer repairs</h5>
-            <p>Mauris sed libero. Suspendisse facilisis nulla in lacinia laoreet, lorem velit accumsan velit vel mattis libero nisl et sem. Proin interdum maecenas massa turpis sagittis in, interdum non lobortis vitae massa.</p>
+        <div class="third">
+            <div class="whatDo">
+                <i class="fa fa-laptop fa-3x" aria-hidden="true"></i>
+                <h5>Computer repairs</h5>
+                <p>Mauris sed libero. Suspendisse facilisis nulla in lacinia laoreet, lorem velit accumsan velit vel mattis libero nisl et sem. Proin interdum maecenas massa turpis sagittis in, interdum non lobortis vitae massa.</p>
+            </div>
         </div>
-    </div>
-    <div class="third">
-        <div class="whatDo">
-            <i class="fa fa-camera-retro fa-3x" aria-hidden="true"></i>
-            <h5>Photoshopping</h5>
-            <p>Mauris sed libero. Suspendisse facilisis nulla in lacinia laoreet, lorem velit accumsan velit vel mattis libero nisl et sem. Proin interdum maecenas massa turpis sagittis in, interdum non lobortis vitae massa.</p>
+        <div class="third">
+            <div class="whatDo">
+                <i class="fa fa-camera-retro fa-3x" aria-hidden="true"></i>
+                <h5>Photoshopping</h5>
+                <p>Mauris sed libero. Suspendisse facilisis nulla in lacinia laoreet, lorem velit accumsan velit vel mattis libero nisl et sem. Proin interdum maecenas massa turpis sagittis in, interdum non lobortis vitae massa.</p>
+            </div>
         </div>
-    </div>
-    <div class="third">
-        <div class="whatDo">
-            <i class="fa fa-video-camera fa-3x" aria-hidden="true"></i>
-            <h5>Video Editing</h5>
-            <p>Mauris sed libero. Suspendisse facilisis nulla in lacinia laoreet, lorem velit accumsan velit vel mattis libero nisl et sem. Proin interdum maecenas massa turpis sagittis in, interdum non lobortis vitae massa.</p>
+        <div class="third">
+            <div class="whatDo">
+                <i class="fa fa-video-camera fa-3x" aria-hidden="true"></i>
+                <h5>Video Editing</h5>
+                <p>Mauris sed libero. Suspendisse facilisis nulla in lacinia laoreet, lorem velit accumsan velit vel mattis libero nisl et sem. Proin interdum maecenas massa turpis sagittis in, interdum non lobortis vitae massa.</p>
+            </div>
         </div>
-    </div>
-    <div class="third">
-        <div class="whatDo">
-            <i class="fa fa-heart fa-3x" aria-hidden="true"></i>
-            <h5>And more..</h5>
-            <p>Mauris sed libero. Suspendisse facilisis nulla in lacinia laoreet, lorem velit accumsan velit vel mattis libero nisl et sem. Proin interdum maecenas massa turpis sagittis in, interdum non lobortis vitae massa.</p>
+        <div class="third">
+            <div class="whatDo">
+                <i class="fa fa-heart fa-3x" aria-hidden="true"></i>
+                <h5>And more..</h5>
+                <p>Mauris sed libero. Suspendisse facilisis nulla in lacinia laoreet, lorem velit accumsan velit vel mattis libero nisl et sem. Proin interdum maecenas massa turpis sagittis in, interdum non lobortis vitae massa.</p>
+            </div>
         </div>
     </div>
 </section>
@@ -76,6 +78,7 @@
         <h4>Portfolio</h4>
         <p>Jotain kivaa tekstii</p>
     </div>
+    <div class="row">
         <div class="third">
             <figure>
                 <img src="http://fakeimg.pl/300x200/">
@@ -111,6 +114,7 @@
                 <img src="http://fakeimg.pl/300x200/">
                 <figcaption>Jotain kivaa tekstii</figcaption>
             </figure>
+        </div>
     </div>
 </section>
 @section('scripts')

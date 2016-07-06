@@ -1,19 +1,23 @@
+//Axis Resets
 border-box-html();
 global-reset();
-print-styles();
 normalize-css();
+print-styles();
+//Axis Settings
+$default-color = $blue;
+//Lost Settings
 @lost flexbox flex;
 @lost gutter 15px;
-//@lost cycle none;
-@lost clearing left;
-
+//Custom Colors
+$bluetrans = alpha(#0074D9, 0.9);
+$whitetrans = alpha(white,.9);
+//Page CSS
 @import 'component/body';
 @import 'component/navbar';
 @import 'component/footer';
 @import 'component/home';
-
+//Misc CSS
 @import 'component/notifications';
 @import 'component/fontawesome';
-
-/* Fonts etc. */
+// Fonts etc. 
 @import url(https://fonts.googleapis.com/css?family=Roboto+Mono);
