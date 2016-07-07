@@ -12,9 +12,8 @@
         <div class="center whiteText">
             <hr>
             <h1>Teen sun duunit</h1>
-            <h5>branding • web design • development • internet marketing</h5>
-            <p>Sit tähän lyhyesti musta ?Sit tähän lyhyestagdi musta ?
-            Sit tähän lyhyesti musta ?Sit tähän lyhyesti musta ?</p>
+            <h5>My • Website • Is • Not • Ready</h5>
+            <p>Check my src = https://github.com/alanaasmaa/Portfolio</p>
             <hr>
             <p>
                 <a class="button" href="/">Portfolio</a>
