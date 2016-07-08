@@ -11,13 +11,13 @@
     <div class="full box blueBg hero">
         <div class="center whiteText">
             <hr>
-            <h1>Teen sun duunit</h1>
-            <h5>My • Website • Is • Not • Ready</h5>
-            <p>Check my src = https://github.com/alanaasmaa/Portfolio</p>
+            <h1>Koodaus on kivaa</h1>
+            <h5>Tämä • sivusto • on • työn • alla</h5>
+            <p>Lähdekoodi > https://github.com/alanaasmaa/Portfolio</p>
             <hr>
             <p>
-                <a class="button" href="/">Portfolio</a>
-                <a class="button" href="/">Contact Us</a>
+                <a class="button" href="{{ url('portfolio')}}">Portfolio</a>
+                <a class="button" href="mailto:alan@alanaasmaa.eu" target="_blank">Pistä Viestiä</a>
             </p>
         </div>
     </div>
@@ -31,43 +31,43 @@
         <div class="third">
             <div class="whatDo">
                 <i class="fa fa-code fa-3x" aria-hidden="true"></i>
-                <h5>Web Development</h5>
-                <p>Mauris sed libero. Suspendisse facilisis nulla in lacinia laoreet, lorem velit accumsan velit vel mattis libero nisl et sem. Proin interdum maecenas massa turpis sagittis in, interdum non lobortis vitae massa.</p>
+                <h5>Verkkokehitys</h5>
+                <p>HTML5/CSS3 verkkosivujen kehitys on pikemminki minun harrastus kun työ. Tarvid uuden verkkosivuston tai vanha kaipaa päivitystä ota ihmeessä yhteyttä. </p>
             </div>
         </div>
         <div class="third">
             <div class="whatDo">
                 <i class="fa fa-mobile fa-3x" aria-hidden="true"></i>
-                <h5>Phone Repairs</h5>
-                <p>Mauris sed libero. Suspendisse facilisis nulla in lacinia laoreet, lorem velit accumsan velit vel mattis libero nisl et sem. Proin interdum maecenas massa turpis sagittis in, interdum non lobortis vitae massa.</p>
+                <h5>Puhelin Korjaukset</h5>
+                <p>Jo puhelimesta hajos lasi, näyttö, kamera tai kajutin ei oikein toimi, niin voin korjata sen itse tai neuvoa sinua korjaaman se itse.</p>
             </div>
         </div>
         <div class="third">
             <div class="whatDo">
                 <i class="fa fa-laptop fa-3x" aria-hidden="true"></i>
-                <h5>Computer repairs</h5>
-                <p>Mauris sed libero. Suspendisse facilisis nulla in lacinia laoreet, lorem velit accumsan velit vel mattis libero nisl et sem. Proin interdum maecenas massa turpis sagittis in, interdum non lobortis vitae massa.</p>
+                <h5>Tietokone Huolto</h5>
+                <p>Jos tietokone tökkii tai tarvii päivitystä niin ota yhteyttä. Voin huoltaa vanhaa konettais tai kasata jopa ihan uuden.</p>
             </div>
         </div>
         <div class="third">
             <div class="whatDo">
                 <i class="fa fa-camera-retro fa-3x" aria-hidden="true"></i>
-                <h5>Photoshopping</h5>
-                <p>Mauris sed libero. Suspendisse facilisis nulla in lacinia laoreet, lorem velit accumsan velit vel mattis libero nisl et sem. Proin interdum maecenas massa turpis sagittis in, interdum non lobortis vitae massa.</p>
+                <h5>Kuvankäsittely</h5>
+                <p>Photoshoppia olen käyttänyt todella paljon, myös kokemusta löytyy pienempien 3D kuvakkeiten osalta.</p>
             </div>
         </div>
         <div class="third">
             <div class="whatDo">
                 <i class="fa fa-video-camera fa-3x" aria-hidden="true"></i>
-                <h5>Video Editing</h5>
-                <p>Mauris sed libero. Suspendisse facilisis nulla in lacinia laoreet, lorem velit accumsan velit vel mattis libero nisl et sem. Proin interdum maecenas massa turpis sagittis in, interdum non lobortis vitae massa.</p>
+                <h5>Videokäsittely</h5>
+                <p>Videkäsittely on ollut minulla pienempiä harrastuksia, kokumusta on After Effects, Sony Vegas ja Cinema 4D ohjelmista.</p>
             </div>
         </div>
         <div class="third">
             <div class="whatDo">
                 <i class="fa fa-heart fa-3x" aria-hidden="true"></i>
-                <h5>And more..</h5>
-                <p>Mauris sed libero. Suspendisse facilisis nulla in lacinia laoreet, lorem velit accumsan velit vel mattis libero nisl et sem. Proin interdum maecenas massa turpis sagittis in, interdum non lobortis vitae massa.</p>
+                <h5>Ja paljon muuta..</h5>
+                <p>Jos uskot että minä voisin olla oikea henkilö johonkin työhön niin ota ihmeessä yhteyttä !</p>
             </div>
         </div>
     </div>
@@ -75,7 +75,7 @@
 <section class="container box center">
     <div class="full title">
         <h4>Newest Portfolio Items</h4>
-        <p>Jotain kivaa tekstii</p>
+        <p>This part of site is not ready</p>
     </div>
     <div class="row">
         <div class="third">

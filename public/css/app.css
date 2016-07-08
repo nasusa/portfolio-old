@@ -888,8 +888,8 @@ nav .fa-codepen {
 nav .fa-linkedin {
   color: #0077b5;
 }
-nav .fa-bitbucket {
-  color: #205081;
+nav .fa-github {
+  color: #333;
 }
 nav .fa:hover {
   -webkit-transform: scale(1.5);

@@ -31,7 +31,7 @@
                 <i class="fa fa-linkedin" aria-hidden="true"></i>&nbsp; Connect with my <a href="https://www.linkedin.com/in/alanaasmaa">LinkedIn</a>
             </li>
             <li>
-                <i class="fa fa-bitbucket" aria-hidden="true"></i>&nbsp; Codes at <a href="http://bitbucket.org/AlanAasmaa/">Bitbucket</a>
+                <i class="fa fa-github" aria-hidden="true"></i>&nbsp; Codes at <a href="https://github.com/alanaasmaa">Github</a>
             </li>
             <li>
                 <i class="fa fa-codepen" aria-hidden="true"></i>&nbsp; Teach me at <a href="http://codepen.io/thasmog/">Codepen</a>
@@ -54,5 +54,10 @@
     <hr>
     <div class="footerInfo">
         <a href="/terms-and-conditions">Terms of Use</a> . Copyright &copy; <?php echo date("Y") ?> Alan Aasmaa®
+        <h5 style="color: #D13F19; text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;">
+            <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
+            Tämä sivust on vasta työn alla
+            <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
+        </h5>
     </div>
 </footer>
