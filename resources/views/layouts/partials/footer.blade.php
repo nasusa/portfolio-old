@@ -8,7 +8,7 @@
                 <i class="fa fa-globe" aria-hidden="true"></i>&nbsp; I'm From Estonia
             </li>
             <li>
-                <i class="fa fa-calendar-o" aria-hidden="true"></i>&nbsp; I'm 21 years old
+                <i class="fa fa-calendar-o" aria-hidden="true"></i>&nbsp; I'm <?= date_diff(date_create('1995-07-30'), date_create('today'))->y;?> years old
             </li>
         </ul>
     </div>
@@ -28,26 +28,26 @@
     <div class="fourth">
     <ul>
             <li>
-                <i class="fa fa-linkedin" aria-hidden="true"></i>&nbsp; Connect with my <a href="https://www.linkedin.com/in/alanaasmaa">LinkedIn</a>
+                <i class="fa fa-linkedin" aria-hidden="true"></i>&nbsp; Connect with my <a href="https://www.linkedin.com/in/alanaasmaa" target="_blank">LinkedIn</a>
             </li>
             <li>
-                <i class="fa fa-github" aria-hidden="true"></i>&nbsp; Codes at <a href="https://github.com/alanaasmaa">Github</a>
+                <i class="fa fa-github" aria-hidden="true"></i>&nbsp; Codes at <a href="https://github.com/alanaasmaa" target="_blank">Github</a>
             </li>
             <li>
-                <i class="fa fa-codepen" aria-hidden="true"></i>&nbsp; Teach me at <a href="http://codepen.io/thasmog/">Codepen</a>
+                <i class="fa fa-codepen" aria-hidden="true"></i>&nbsp; Teach me at <a href="http://codepen.io/thasmog/" target="_blank">Codepen</a>
             </li>
         </ul>
     </div>
     <div class="fourth">
     <ul>
             <li>
-                <i class="fa fa-steam" aria-hidden="true"></i>&nbsp; I'm at <a href="http://steamcommunity.com/id/thasmog">Steam</a>
+                <i class="fa fa-steam" aria-hidden="true"></i>&nbsp; I'm at <a href="http://steamcommunity.com/id/thasmog" target="_blank">Steam</a>
             </li>
             <li>
-                <i class="fa fa-youtube" aria-hidden="true"></i>&nbsp; Watch me from <a href="https://www.youtube.com/c/thasmog">YouTube</a>
+                <i class="fa fa-youtube" aria-hidden="true"></i>&nbsp; Watch me from <a href="https://www.youtube.com/c/thasmog" target="_blank">YouTube</a>
             </li>
             <li>
-                <i class="fa fa-facebook" aria-hidden="true"></i>&nbsp; Stalk me from <a href="https://www.facebook.com/alan.aasmaa">Facebook</a>
+                <i class="fa fa-facebook" aria-hidden="true"></i>&nbsp; Stalk me at <a href="https://www.facebook.com/alan.aasmaa" target="_blank">Facebook</a>
             </li>
         </ul>
     </div>

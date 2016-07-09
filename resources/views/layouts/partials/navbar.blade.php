@@ -25,9 +25,9 @@
   </nav>
   <nav>
     <ul>
+      <li><a href="https://github.com/alanaasmaa"><i class="fa fa-github" aria-hidden="true"></i></a></li>     
       <li><a href="https://www.linkedin.com/in/alanaasmaa"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
       <li><a href="http://codepen.io/thasmog/"><i class="fa fa-codepen" aria-hidden="true"></i></a></li>
-      <li><a href="https://github.com/alanaasmaa"><i class="fa fa-github" aria-hidden="true"></i></a></li>     
     </ul>
   </nav>
 </section>
