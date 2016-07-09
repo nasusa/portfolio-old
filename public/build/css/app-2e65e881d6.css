@@ -461,6 +461,9 @@ strong {
 small {
   font-size: 75%;
 }
+a {
+  color: inherit;
+}
 .title {
   margin-bottom: 1.5rem;
 }
@@ -630,6 +633,9 @@ img {
 }
 .center {
   text-align: center;
+}
+.pagination li {
+  display: inline;
 }
 .back-to-top {
   position: fixed;

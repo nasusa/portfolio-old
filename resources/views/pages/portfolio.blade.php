@@ -3,55 +3,33 @@
 @section('title', 'Portfolio')
 @section('description', 'This is a description')
 @section('keywords', 'These, are, keywords')
-@section('styles')
-
-@stop
 @section('content')
 <section class="container box center">
     <div class="full title">
-        <h4>Newest Portfolio Items</h4>
-        <p>Jotain kivaa tekstii</p>
+        <h4>Portfolio</h4>
+        <p>Täältä löyty kaikki minun työt</p>
     </div>
     <div class="row">
-        <div class="third">
-            <figure>
-                <img src="http://fakeimg.pl/300x200/?text=No_Image">
-                <figcaption>Jotain kivaa tekstii</figcaption>
-            </figure>
-        </div>
-        <div class="third">
-            <figure>
-                <img src="http://fakeimg.pl/300x200/?text=No_Image">
-                <figcaption>Jotain kivaa kirjoitus</figcaption>
-            </figure>
-        </div>
-        <div class="third">
-            <figure>
-                <img src="http://fakeimg.pl/300x200/?text=No_Image">
-                <figcaption>Jotain kivaa tekstii</figcaption>
-            </figure>
-        </div>
-        <div class="third">
-            <figure>
-                <img src="http://fakeimg.pl/300x200/?text=No_Image">
-                <figcaption>Jotain kivaa kirjoitustaaadfasdfasdfsd</figcaption>
-            </figure>
-        </div>
-        <div class="third">
-            <figure>
-                <img src="http://fakeimg.pl/300x200/?text=No_Image">
-                <figcaption>Jotain kivaa tekstii</figcaption>
-            </figure>
-        </div>
-        <div class="third">
-            <figure>
-                <img src="http://fakeimg.pl/300x200/?text=No_Image">
-                <figcaption>Jotain kivaa tekstii</figcaption>
-            </figure>
-        </div>
+        @if (count($data['posts']))
+            @foreach ($data['posts'] as $post)
+                <div class="third">
+                    <a style="display:block;" href="{{url('blog/'.$post->url)}}">
+                        <figure>
+                            <figcaption><b>{{$post->title}}</b></figcaption>
+                            <img src="{{$post->image}}">
+                            <figcaption>{{$post->description}}</figcaption>
+                        </figure>
+                    </a>
+                </div>
+            @endforeach
+        @endif
     </div>
 </section>
-@section('scripts')
-
-@stop
+<section class="container center">
+    <div class="box pagination">
+        <ul>
+            {!! $data['posts']->render() !!}
+        </ul>
+    </div>
+</section>
 @endsection

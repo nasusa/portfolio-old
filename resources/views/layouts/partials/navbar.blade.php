@@ -11,7 +11,7 @@
   <nav id="nav">
     <ul>
       <li><a class="{!! set_active('/') !!}" href="/">Etusivu</a></li>
-      <li><a class="{!! set_active('portfolio') !!}" href="{{ url('portfolio')}}" aria-haspopup="true">Portfolio</a>
+      <li><a class="{!! set_active('blog') !!}" href="{{ url('blog')}}" aria-haspopup="true">Blog</a>
         <ul>
           <li><a href="/">Design</a></li>
           <li><a href="/">HTML</a></li>
@@ -19,7 +19,7 @@
           <li><a href="/">Java</a></li>
         </ul>
       </li>
-      <li><a href="/">Palvelut</a></li>
+      <li><a class="{!! set_active('portfolio') !!}" href="{{ url('portfolio')}}">Portfolio</a></li>
       <li><a href="/">Minusta</a></li>
     </ul>
   </nav>
