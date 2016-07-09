@@ -10,14 +10,14 @@
         <p>Täältä löyty kaikki minun työt</p>
     </div>
     <div class="row">
-        @if (count($data['posts']))
-            @foreach ($data['posts'] as $post)
+        @if (count($data['portfolios']))
+            @foreach ($data['portfolios'] as $portfolio)
                 <div class="third">
-                    <a style="display:block;" href="{{url('blog/'.$post->url)}}">
+                    <a style="display:block;" href="{{url('blog/'.$portfolio->url)}}">
                         <figure>
-                            <figcaption><b>{{$post->title}}</b></figcaption>
-                            <img src="{{$post->image}}">
-                            <figcaption>{{$post->description}}</figcaption>
+                            <figcaption><b>{{$portfolio->title}}</b></figcaption>
+                            <img src="{{$portfolio->image}}">
+                            <figcaption>{{$portfolio->description}}</figcaption>
                         </figure>
                     </a>
                 </div>
@@ -26,10 +26,8 @@
     </div>
 </section>
 <section class="container center">
-    <div class="box pagination">
-        <ul>
-            {!! $data['posts']->render() !!}
-        </ul>
+    <div class="box">
+            {!! $data['portfolios']->render() !!}
     </div>
 </section>
 @endsection

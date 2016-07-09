@@ -123,11 +123,28 @@ img {
 
 .center {
     text-align: center;
+    align-items: center;
+    justify-content: center;
 }
-.pagination {
-  li {
+.pagination li{
     display: inline;
-  }
+    padding: .5rem .75rem;
+    margin-left: -1px;
+    line-height: 1.5;
+    color: $blue;
+    text-decoration: none;
+    border: 1px solid $gray;
+    background-color: $white;
+    &.active {
+      color: #fff;
+      cursor: default;
+      background-color: $blue;
+      border-color: $blue;
+    }
+    &.disabled {
+      color: $gray;
+      cursor: not-allowed;
+    }
 }
 .back-to-top {
   +mobile() {

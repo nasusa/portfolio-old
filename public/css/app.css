@@ -633,9 +633,31 @@ img {
 }
 .center {
   text-align: center;
+  -webkit-box-align: center;
+  -ms-grid-row-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
 }
 .pagination li {
   display: inline;
+  padding: 0.5rem 0.75rem;
+  margin-left: -1px;
+  line-height: 1.5;
+  color: #0074d9;
+  text-decoration: none;
+  border: 1px solid #aaa;
+  background-color: #fff;
+}
+.pagination li.active {
+  color: #fff;
+  cursor: default;
+  background-color: #0074d9;
+  border-color: #0074d9;
+}
+.pagination li.disabled {
+  color: #aaa;
+  cursor: not-allowed;
 }
 .back-to-top {
   position: fixed;

@@ -68,10 +68,10 @@ class Front extends Controller
     }
 
     public function portfolio() {
-        $posts = \App\Post::where('id', '>', 0)->paginate(9);
-        $posts->setPath('portfolio');
+        $portfolios = \App\Post::where('id', '>', 0)->paginate(9);
+        $portfolios->setPath('portfolio');
 
-        $data['posts'] = $posts;
+        $data['portfolios'] = $portfolios;
 
         return view('pages.portfolio', array('data' => $data, 'title' => 'Latest Blog Posts', 'description' => '', 'page' => 'blog', 'brands' => $this->brands, 'categories' => $this->categories, 'products' => $this->products));
     }
