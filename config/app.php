@@ -159,7 +159,6 @@ return [
          * Custom Service Providers...
          */
         Dimsav\Translatable\TranslatableServiceProvider::class,
-        \Gloudemans\Shoppingcart\ShoppingcartServiceProvider::class
 
     ],
 
@@ -209,7 +208,6 @@ return [
         /*
         * Custom Class Aliases...
         */
-        'Cart' => \Gloudemans\Shoppingcart\Facades\Cart::class,
     ],
 
 ];

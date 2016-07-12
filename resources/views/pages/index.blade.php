@@ -78,42 +78,17 @@
         <p>This part of site is not ready</p>
     </div>
     <div class="row">
-        <div class="third">
-            <figure>
-                <img src="http://fakeimg.pl/300x200/?text=No_Image">
-                <figcaption>Jotain kivaa tekstii</figcaption>
-            </figure>
-        </div>
-        <div class="third">
-            <figure>
-                <img src="http://fakeimg.pl/300x200/?text=No_Image">
-                <figcaption>Jotain kivaa kirjoitus</figcaption>
-            </figure>
-        </div>
-        <div class="third">
-            <figure>
-                <img src="http://fakeimg.pl/300x200/?text=No_Image">
-                <figcaption>Jotain kivaa tekstii</figcaption>
-            </figure>
-        </div>
-        <div class="third">
-            <figure>
-                <img src="http://fakeimg.pl/300x200/?text=No_Image">
-                <figcaption>Jotain kivaa kirjoitustaaadfasdfasdfsd</figcaption>
-            </figure>
-        </div>
-        <div class="third">
-            <figure>
-                <img src="http://fakeimg.pl/300x200/?text=No_Image">
-                <figcaption>Jotain kivaa tekstii</figcaption>
-            </figure>
-        </div>
-        <div class="third">
-            <figure>
-                <img src="http://fakeimg.pl/300x200/?text=No_Image">
-                <figcaption>Jotain kivaa tekstii</figcaption>
-            </figure>
-        </div>
+        @foreach ($data['portfolios'] as $portfolio)
+            <div class="third">
+                <a style="display:block;" href="{{url('portfolio/'.$portfolio->url)}}">
+                    <figure>
+                        <figcaption><b>{{$portfolio->title}}</b></figcaption>
+                        <img src="{{$portfolio->image}}">
+                        <figcaption>{{$portfolio->description}}</figcaption>
+                    </figure>
+                </a>
+            </div>
+        @endforeach
     </div>
 </section>
 @section('scripts')
