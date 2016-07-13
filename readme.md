@@ -23,6 +23,16 @@ Here you can see how i'm building my Portfolio !
     * Disqus
     * Standalone ?
 * Admin Panel
+    * Blog
+        * Add blog
+        * Trash blog
+        * Empty Trash
+        * Recover Trash
+    * Portfolio
+        * Add blog
+        * Trash blog
+        * Empty Trash
+        * Recover Trash
 * Sidebar for blog 
     * Latest Blog Items
     * Top Blog Items
@@ -38,7 +48,6 @@ Here you can see how i'm building my Portfolio !
 
 ### Possible features
 * User Registration
-    * User Profile'se
-
+    * User Profile's
 * Public blog ? 
     * Not so public but public
