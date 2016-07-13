@@ -11,10 +11,26 @@ class CategoriesTableSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('categories')->insert(['name' => 'PORTFOLIO']);
-        DB::table('categories')->insert(['name' => 'WOMENS']);
-        DB::table('categories')->insert(['name' => 'KIDS']);
-        DB::table('categories')->insert(['name' => 'FASHION']);
-        DB::table('categories')->insert(['name' => 'CLOTHING']);
+        $faker = Faker\Factory::create();
+
+        \App\Category::create([
+            'name' => $faker->word,
+            'slug' => $faker->slug,
+            'parent_id' => '0',
+            'created_at' => $faker->dateTimeThisYear(),
+            'updated_at' => $faker->dateTimeThisYear(),
+        ]);
+
+        foreach (range(1, 10) as $index) {
+            $categoryIds = \App\Category::whereParentId('0')->lists('id')->toArray();
+
+            \App\Category::create([
+                'name' => $faker->unique()->word,
+                'slug' => $faker->unique()->slug,
+                'parent_id' => $faker->optional(0.5, '0')->randomElement($categoryIds),
+                'created_at' => $faker->dateTimeThisYear(),
+                'updated_at' => $faker->dateTimeThisYear(),
+            ]);
+        }
     }
 }

@@ -75,16 +75,16 @@
 <section class="container box center">
     <div class="full title">
         <h4>Newest Portfolio Items</h4>
-        <p>This part of site is not ready</p>
+        <p>Click to open full article</p>
     </div>
     <div class="row">
-        @foreach ($data['portfolios'] as $portfolio)
+        @foreach ($articles as $article)
             <div class="third">
-                <a style="display:block;" href="{{url('portfolio/'.$portfolio->url)}}">
+                <a style="display:block;" href="article/{{ $article->slug }}">
                     <figure>
-                        <figcaption><b>{{$portfolio->title}}</b></figcaption>
-                        <img src="{{$portfolio->image}}">
-                        <figcaption>{{$portfolio->description}}</figcaption>
+                        <figcaption><b>{!! str_limit($article->title, $limit = 25, $end = '...') !!}</b></figcaption>
+                        <img src="{{$article->image}}">
+                        <figcaption>{!! str_limit($article->body_html, $limit = 100, $end = '...') !!}</figcaption>
                     </figure>
                 </a>
             </div>

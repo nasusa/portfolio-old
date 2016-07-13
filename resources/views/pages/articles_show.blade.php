@@ -6,9 +6,8 @@
 @section('content')
 <div class="container">
     <section class="sideContent">
-        @foreach ($articles as $article)
         <div class="box">
-            <a href="{{url('article/'.$article->url)}}">
+            <a href="{{url('articles/'.$article->slug)}}">
                 <img src="{{$article->image}}" class="blog-img">
             </a>
             <div class="post-meta">
@@ -20,12 +19,10 @@
                     <li><i class="fa fa-tags"></i> @foreach($article->tags as $key => $tag)<a href="/tags/{{ $tag->slug }}"> {{ $tag->name }}</a>@endforeach</li>
                 </ul>
             </div>
-            <p>{!! str_limit($article->body_html, $limit = 200, $end = '...') !!}</p>
-            <a  class="btn btn-primary" href="{{url('article/'.$article->url)}}">Read More</a>
-        </div>
-        @endforeach
-        <div class="box center">
-            {!! $articles->render() !!}
+            <p>{!! $article->body_html !!}</p>
+            @unless(is_null($article->original) || empty($article->original))
+			    <p>Source:<br>{{ $article->original }}</p>
+		    @endunless
         </div>
     </section>
     @include('layouts.partials.sidebar')

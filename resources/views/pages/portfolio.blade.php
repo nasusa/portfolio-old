@@ -4,12 +4,12 @@
 @section('description', 'This is a description')
 @section('keywords', 'These, are, keywords')
 @section('content')
-    @if (count($data['portfolios']))
+    @if (count($articles))
         <section class="container box center">
             <div class="row">
-                @foreach ($data['portfolios'] as $portfolio)
+                @foreach ($articles as $portfolio)
                     <div class="third">
-                        <a style="display:block;" href="{{url('portfolio/'.$portfolio->url)}}">
+                        <a style="display:block;" href="{{url('portfolio/'.$portfolio->slug)}}">
                             <figure>
                                 <figcaption><b>{{$portfolio->title}}</b></figcaption>
                                 <img src="{{$portfolio->image}}">
@@ -19,7 +19,7 @@
                     </div>
                 @endforeach
             </div>
-            {!! $data['portfolios']->render() !!}
+            {!! $articles->render() !!}
         </section>
     @endif
 @endsection
