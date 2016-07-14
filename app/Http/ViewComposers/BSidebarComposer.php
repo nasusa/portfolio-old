@@ -29,7 +29,7 @@ class BSidebarComposer
      */
     public function compose(View $view)
     {
-        $view->with('categories', Category::all());
+        $view->with('categories', Category::getSortedCategories());
         $view->with('tags', Tag::all());
     }
 }
