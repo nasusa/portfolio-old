@@ -19,6 +19,7 @@ Here you can see how i'm building my Portfolio !
 * Gravatar
 
 ### To Do
+* Search engine
 * Commenting for blog items (portfolio items)
     * Disqus
     * Standalone ?
