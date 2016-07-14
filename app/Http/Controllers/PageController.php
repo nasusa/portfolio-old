@@ -15,7 +15,7 @@ class PageController extends Controller
      */
     public function index()
     {
-        $articles = \App\Article::with('tags', 'category')->latest()->take(6)->get();
+        $articles = \App\Models\Article::with('tags', 'category')->latest()->take(6)->get();
         return view('pages.index', compact('articles'));
     }
 

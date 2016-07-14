@@ -3,11 +3,11 @@
 
 <h2>Category</h2>
 <h2>tags</h2>
-<h2>popular posts</h2>{{--
+<h2>popular posts</h2>
 <div class="sidebar-module sidebar-module-inset">
 		<h1>Categories</h1>
-		<ol class="list-unstyled">
-			@foreach($allCategories as $category)
+		{{--<ol class="list-unstyled">
+			@foreach($categories as $category)
 				<li>
 					@if($category->parent_id > 0)
 						&nbsp;&nbsp;&nbsp;--
@@ -16,7 +16,7 @@
 				</li>
 			@endforeach
 		</ol>
-	</div>
+	</div>{{--
 	<div class="sidebar-module sidebar-module-inset">
 		<h1>Hot</h1>
 		<ol class="list-unstyled">

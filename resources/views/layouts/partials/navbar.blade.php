@@ -22,6 +22,17 @@
       <li><a class="{!! set_active('portfolio') !!}" href="{{ url('portfolio')}}">Portfolio</a></li>
       <li><a href="/">Minusta</a></li>
     </ul>
+    @if (Auth::check())
+      <ul class="center">
+      <li><a href="logout">{{ Auth::user()->name }}</a>
+        </li><img class="navimg" src="{{ Gravatar::src(Auth::user()->email, 40)  }}">
+      </ul>
+      @else 
+      <ul>
+        <li><a class="{!! set_active('auth/login') !!}" href="/login">Login</a></li>
+        <li><a class="{!! set_active('auth/register') !!}" href="/register">Register</a></li>
+      </ul>
+      @endif
   </nav>
   <nav>
     <ul>

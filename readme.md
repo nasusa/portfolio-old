@@ -16,6 +16,7 @@ Here you can see how i'm building my Portfolio !
 * PHP
 * JS
 * MySQL
+* Gravatar
 
 ### To Do
 * Commenting for blog items (portfolio items)
