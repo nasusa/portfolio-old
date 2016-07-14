@@ -7,7 +7,6 @@ use App\Http\Requests;
 use App\Models\Article;
 use App\Models\Category;
 use App\Models\Tag;
-use App\Models\User;
 
 class BlogController extends Controller
 {
@@ -26,13 +25,13 @@ class BlogController extends Controller
     public function categories($slug) {
         $articles = Category::findBySlug($slug)->articles()->latest()->paginate(9);
 
-        return view('pages.categories', compact('articles', 'category'));
+        return view('pages.categories', compact('articles'));
     }
 
     public function tags($slug) {
         $articles = Tag::findBySlug($slug)->articles()->latest('articles.created_at')->paginate(9);
         
-        return view('pages.tags', compact('articles', 'tag'));
+        return view('pages.tags', compact('articles'));
     }
 
     public function portfolio() {

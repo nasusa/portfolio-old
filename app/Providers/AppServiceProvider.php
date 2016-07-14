@@ -13,7 +13,15 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+        /**
+        * Allow Sidebar to read Tags and Categoryes
+        *
+        * @return void
+        */
+        view()->composer(
+            'layouts.partials.blog_sidebar',
+            'App\Http\ViewComposers\BSidebarComposer'
+            );  
     }
 
     /**

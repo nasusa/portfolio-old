@@ -28,6 +28,6 @@
             {!! $articles->render() !!}
         </div>
     </section>
-    @include('layouts.partials.sidebar')
+    @include('layouts.partials.blog_sidebar')
 </div>
 @endsection
