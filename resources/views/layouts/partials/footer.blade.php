@@ -54,9 +54,9 @@
     <hr>
     <div class="footerInfo">
         <a href="/terms-and-conditions">Terms of Use</a> . Copyright &copy; <?php echo date("Y") ?> Alan Aasmaa®
-        <h5 style="color: #D13F19; text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;">
+        <h5 style="color: #D13F19; text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;padding-top: 15px;">
             <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
-            Tämä sivust on vasta työn alla
+            Tämä sivusto on vasta työn alla
             <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
         </h5>
     </div>

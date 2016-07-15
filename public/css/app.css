@@ -904,23 +904,40 @@ figure figcaption {
   text-align: center;
   font-style: italic;
 }
+article {
+  padding: 0px !important;
+}
 article:target {
   border-left: 4px solid #0074d9;
   border-right: 4px solid #0074d9;
 }
 article img {
-  height: 200px;
+  height: 300px;
   -o-object-fit: cover;
   object-fit: cover;
   min-width: 100%;
 }
 article header {
-  border-bottom: 1px solid #aaa;
-  margin-bottom: 30px;
-  padding-bottom: 15px;
+  border-bottom: 1px solid #0074d9;
+  padding: 30px 30px 15px 30px;
 }
-article li {
-  display: inline;
+article header h4 {
+  text-align: center;
+}
+article dl {
+  display: -webkit-box;
+  display: flex;
+  justify-content: space-around;
+}
+article p {
+  padding: 30px 30px 15px 30px;
+}
+article .readmore {
+  display: block;
+  background-color: #0074d9;
+  padding: 15px;
+  text-align: center;
+  color: #fff;
 }
 .sidebar {
   -webkit-box-flex: 0;
@@ -995,10 +1012,10 @@ nav .fa-github {
 nav .fa:hover {
   -webkit-transform: scale(1.5);
   transform: scale(1.5);
-  -webkit-transition: -webkit-transform 0.2s linear;
-  transition: -webkit-transform 0.2s linear;
-  transition: transform 0.2s linear;
-  transition: transform 0.2s linear, -webkit-transform 0.2s linear;
+  -webkit-transition: -webkit-transform 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition: -webkit-transform 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition: transform 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition: transform 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55), -webkit-transform 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 @import url("https://fonts.googleapis.com/css?family=RobotoMono");
 

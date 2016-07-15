@@ -1,21 +1,38 @@
 article {
+    padding: 0px !important;
     &:target {
         border-left: 4px solid $blue;
         border-right: 4px solid $blue;
-        }
+    }
     img {
-        height: 200px;
+        height: 300px;
         object-fit: cover;
         min-width: 100%;
     }
 
     header {
-        border-bottom: 1px solid $gray;
-        margin-bottom: 30px;
-        padding-bottom: 15px;
+        border-bottom: 1px solid $blue;
+        //margin-bottom: 15px;
+        padding: 30px 30px 15px 30px;
+        h4 {
+            text-align: center;
+        }
     }
 
-    li {
-            display:inline;
+    dl {
+            display:flex;
+            justify-content: space-around;
         }
+    
+    p {
+        padding: 30px 30px 15px 30px;
+    }
+    .readmore {
+        display:block;
+        background-color: $blue;
+        padding: 15px;
+        text-align: center;
+        color: $white;    
+    }
+
 }
