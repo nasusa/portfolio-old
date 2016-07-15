@@ -33,7 +33,6 @@ elixir(function(mix) {
         progressive: true,
         interlaced: true
     })
-
     .browserSync({ 
         proxy: 'cv.dev',
         notify: false
