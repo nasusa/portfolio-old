@@ -1,14 +1,21 @@
-.blog-img {
-    height: 200px;
-    object-fit: cover;
-    min-width: 100%;
-}
-
-.post-meta {
-    border-bottom: 1px solid $gray;
-    margin-bottom: 30px;
-    padding-bottom: 15px;
-    li {
-        display:inline;
+article {
+    &:target {
+        border-left: 4px solid $blue;
+        border-right: 4px solid $blue;
+        }
+    img {
+        height: 200px;
+        object-fit: cover;
+        min-width: 100%;
     }
+
+    header {
+        border-bottom: 1px solid $gray;
+        margin-bottom: 30px;
+        padding-bottom: 15px;
+    }
+
+    li {
+            display:inline;
+        }
 }

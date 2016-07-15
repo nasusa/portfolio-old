@@ -904,18 +904,22 @@ figure figcaption {
   text-align: center;
   font-style: italic;
 }
-.blog-img {
+article:target {
+  border-left: 4px solid #0074d9;
+  border-right: 4px solid #0074d9;
+}
+article img {
   height: 200px;
   -o-object-fit: cover;
   object-fit: cover;
   min-width: 100%;
 }
-.post-meta {
+article header {
   border-bottom: 1px solid #aaa;
   margin-bottom: 30px;
   padding-bottom: 15px;
 }
-.post-meta li {
+article li {
   display: inline;
 }
 .sidebar {
