@@ -13,7 +13,7 @@ class CategoriesTableSeeder extends Seeder
     {
         $faker = Faker\Factory::create();
 
-        \App\Category::create([
+        \App\Models\Category::create([
             'name' => $faker->word,
             'slug' => $faker->slug,
             'parent_id' => '0',
@@ -24,7 +24,7 @@ class CategoriesTableSeeder extends Seeder
         foreach (range(1, 10) as $index) {
             $categoryIds = \App\Category::whereParentId('0')->lists('id')->toArray();
 
-            \App\Category::create([
+            \App\Models\Category::create([
                 'name' => $faker->unique()->word,
                 'slug' => $faker->unique()->slug,
                 'parent_id' => $faker->optional(0.5, '0')->randomElement($categoryIds),

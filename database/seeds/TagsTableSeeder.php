@@ -13,7 +13,7 @@ class TagsTableSeeder extends Seeder
     {
         $faker = Faker\Factory::create();
         foreach (range(1, 20) as $index) {
-            \App\Tag::create([
+            \App\Models\Tag::create([
                 'name' => $faker->unique()->word,
                 'slug' => $faker->unique()->slug,
                 'created_at' => $faker->dateTimeThisYear(),

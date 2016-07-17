@@ -12,11 +12,11 @@ class ArticlesTableSeeder extends Seeder
     public function run()
     {
         $faker = Faker\Factory::create();
-        $userIds = \App\User::lists('id')->toArray();
-        $tagIds = \App\Tag::lists('id')->toArray();
-        $categoryIds = \App\Category::lists('id')->toArray();
+        $userIds = \App\Models\User::lists('id')->toArray();
+        $tagIds = \App\Models\Tag::lists('id')->toArray();
+        $categoryIds = \App\Models\Category::lists('id')->toArray();
         foreach (range(1, 20) as $index) {
-            $article = \App\Article::create([
+            $article = \App\Models\Article::create([
                 'title' => $faker->sentence,
                 'description' => $faker->paragraph($nbSentences = 3),
                 'body' => $faker->paragraph(20),
