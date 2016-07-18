@@ -939,6 +939,7 @@ article .readmore {
   padding: 15px;
   text-align: center;
   color: #fff;
+  float: right;
 }
 .sidebar {
   -webkit-box-flex: 0;
