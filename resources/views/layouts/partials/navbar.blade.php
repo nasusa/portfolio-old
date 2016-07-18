@@ -8,7 +8,7 @@
         <i class="fa fa-bars" aria-hidden="true"></i>
       </label>
     </nav>
-    <nav id="nav">
+    <nav>
       <ul>
         <li><a class="{!! set_active('/') !!}" href="/">Etusivu</a></li>
         <li><a class="{!! set_active('blog') !!}" href="{{ url('blog')}}" aria-haspopup="true">Blog</a>
@@ -26,7 +26,7 @@
         <li><a href="logout">{{ Auth::user()->name }}</a>
           </li><img class="navimg" src="{{ Gravatar::src(Auth::user()->email, 40)  }}">
         </ul>
-        @endif
+      @endif
     </nav>
     <nav>
       <ul>
