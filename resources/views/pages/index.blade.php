@@ -11,7 +11,7 @@
     <div class="full box blueBg hero">
         <div class="center whiteText">
             <hr>
-            <h1>Koodaus on kivaa</h1>
+            <h1>TESTING</h1>
             <h5>Tämä • sivusto • on • työn • alla</h5>
             <p>Lähdekoodi > https://github.com/alanaasmaa/Portfolio</p>
             <hr>
