@@ -8,7 +8,7 @@
         <i class="fa fa-bars" aria-hidden="true"></i>
       </label>
     </nav>
-    <nav>
+    <nav id="nav">
       <ul>
         <li><a class="{!! set_active('/') !!}" href="/">Etusivu</a></li>
         <li><a class="{!! set_active('blog') !!}" href="{{ url('blog')}}" aria-haspopup="true">Blog</a>

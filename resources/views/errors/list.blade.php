@@ -10,7 +10,7 @@
 @if (count($errors) > 0)
 <div class="error flashmessage animated slideInRight">
 	<div>
-		<strong>{{ Lang::get('auth.whoops') }}</strong> {{ Lang::get('auth.someProblems') }}<br /><br />
+		<strong>{{ Lang::get('auth.whoops') }}</strong><br />
 		<ul>
 			@foreach ($errors->all() as $error)
 			<li>{{ $error }}</li>

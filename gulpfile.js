@@ -6,7 +6,7 @@ var elixir = require('laravel-elixir'),
 
 require('laravel-elixir-stylus');
 require('laravel-elixir-imagemin');
-require('laravel-elixir-minify-html');
+//require('laravel-elixir-minify-html');
 
 elixir.config.sourcemaps = true;
 
@@ -24,7 +24,7 @@ elixir(function(mix) {
     .version([
     	'css/app.css'
     ])
-    .html(
+    /*.html(
         'storage/framework/views/*',
         'storage/framework/views/', 
         {
@@ -33,7 +33,7 @@ elixir(function(mix) {
             removeComments: true, 
             minifyJS: true
         }
-    )
+    )*/
     .scripts([
         'components/**/*.js',
         'app.js'

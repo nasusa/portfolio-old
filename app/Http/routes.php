@@ -11,12 +11,10 @@
 |
 */
 Route::auth();
-Route::group(['middleware' => 'web'], function () {
-    Route::get('/', 'PageController@index');
-    Route::get('tags/{slug}', 'BlogController@tags');
-    Route::get('categories/{slug}', 'BlogController@categories');
-    Route::get('blog', 'BlogController@index');
-    Route::get('article/{slug}', 'BlogController@article');
-    Route::get('portfolio', 'BlogController@portfolio');
-    Route::get('portfolio/{slug}', 'BlogController@portfolioItem');
-});
+Route::get('/', 'PageController@index');
+Route::get('tags/{slug}', 'BlogController@tags');
+Route::get('categories/{slug}', 'BlogController@categories');
+Route::get('blog', 'BlogController@index');
+Route::get('article/{slug}', 'BlogController@article');
+Route::get('portfolio', 'BlogController@portfolio');
+Route::get('portfolio/{slug}', 'BlogController@portfolioItem');
