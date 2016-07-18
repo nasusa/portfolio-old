@@ -21,9 +21,9 @@ class ArticlesTableSeeder extends Seeder
                 'description' => $faker->paragraph($nbSentences = 3),
                 'body' => $faker->paragraph(20),
                 'image' => $faker->randomElement($array = array (
-                    'http://fakeimg.pl/300x200/?text=1', 
-                    'http://fakeimg.pl/300x200/?text=2', 
-                    'http://fakeimg.pl/300x200/?text=3'
+                    'https://fakeimg.pl/300x200/?text=1', 
+                    'https://fakeimg.pl/300x200/?text=2', 
+                    'https://fakeimg.pl/300x200/?text=3'
                     )),
                 'click' => $faker->numberBetween(100, 9000),
                 'slug' => $faker->unique()->slug,
