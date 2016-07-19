@@ -417,19 +417,19 @@ h6 {
   color: inherit;
 }
 h1 {
-  font-size: 2.5rem;
+  font-size: 2.5em;
 }
 h2 {
-  font-size: 2rem;
+  font-size: 2em;
 }
 h3 {
-  font-size: 1.75rem;
+  font-size: 1.75em;
 }
 h4 {
-  font-size: 1.5rem;
+  font-size: 1.5em;
 }
 h5 {
-  font-size: 1.25rem;
+  font-size: 1.25em;
 }
 h6 {
   font-size: 1rem;
@@ -446,17 +446,6 @@ small {
 }
 a {
   color: inherit;
-}
-.title {
-  margin-bottom: 1.5rem;
-}
-.title h4 {
-  margin: 1.14rem 0 0 0;
-}
-.title p {
-  margin: 0;
-}
-a {
   text-decoration: none;
 }
 hr {
@@ -467,6 +456,24 @@ hr {
 img {
   max-width: 100%;
   height: auto;
+}
+.text-lowercase {
+  text-transform: lowercase !important;
+}
+.text-uppercase {
+  text-transform: uppercase !important;
+}
+.text-capitalize {
+  text-transform: capitalize !important;
+}
+.title {
+  margin-bottom: 1.5rem;
+}
+.title h4 {
+  margin: 1.14rem 0 0 0;
+}
+.title p {
+  margin: 0;
 }
 .container {
   display: -webkit-box;
@@ -640,7 +647,7 @@ img {
 .box {
   margin-top: 10px;
   background-color: rgba(255,255,255,0.9);
-  box-shadow: 1px 1.732px 5px 0px rgba(4,5,6,0.2);
+  box-shadow: 1px 2px 5px 0px rgba(34,34,34,0.9);
   padding: 15px;
   word-wrap: break-word;
 }
@@ -952,7 +959,6 @@ article .readmore {
   -webkit-box-flex: 0;
   flex: 0 0 auto;
   width: calc(99.9% * 3/12 - (15px - 15px * 3/12));
-  height: 100%;
 }
 .sidebar:nth-child(1n) {
   margin-right: 15px;
@@ -964,6 +970,29 @@ article .readmore {
 .sidebar:nth-child(12n) {
   margin-right: 0;
   margin-left: auto;
+}
+.sidebar li {
+  padding: 5px 0;
+  position: relative;
+}
+.sidebar li a {
+  color: #727272;
+  font-weight: 800;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  font-size: 1em;
+  padding-left: 15px;
+}
+.sidebar li a:hover {
+  color: #0074d9;
+}
+.sidebar li a:before {
+  content: '\203a';
+  position: absolute;
+  font-size: 1.5em;
+  line-height: 1em;
+  top: 0em;
+  left: 0;
 }
 .sideContent {
   -webkit-box-flex: 0;
@@ -980,6 +1009,23 @@ article .readmore {
 .sideContent:nth-child(12n) {
   margin-right: 0;
   margin-left: auto;
+}
+.tag {
+  background: rgba(255,255,255,0.9);
+  color: #0074d9;
+  margin-top: 5px;
+  display: -webkit-inline-box;
+  display: inline-flex;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  font-weight: 800;
+}
+.tag:hover {
+  background: rgba(0,116,217,0.9);
+  color: #fff;
+}
+.tag a {
+  padding: 5px 10px;
 }
 .flashmessage {
   color: #fff;

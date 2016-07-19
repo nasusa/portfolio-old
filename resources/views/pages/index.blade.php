@@ -84,7 +84,7 @@
                     <figure>
                         <figcaption><b>{!! str_limit($article->title, $limit = 25, $end = '...') !!}</b></figcaption>
                         <img src="{{$article->image}}">
-                        <figcaption>{!! str_limit($article->body_html, $limit = 100, $end = '...') !!}</figcaption>
+                        <figcaption>@markdown((str_limit($article->body, 100, '...')))</figcaption>
                     </figure>
                 </a>
             </div>

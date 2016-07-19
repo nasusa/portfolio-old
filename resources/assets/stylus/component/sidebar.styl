@@ -1,8 +1,50 @@
 .sidebar {
     lost-column: 3/12;
-    height: 100%;
+
+    li {
+        padding: 5px 0;
+        position: relative;
+        a {
+            color: $darkgray;
+            font-weight: 800;
+            transition: all .2s ease;
+            font-size: 1em;
+            padding-left: 15px;
+            &:hover {
+                color: $blue;
+            }
+            &:before {
+                content: '\203a';
+                position: absolute;
+                font-size: 1.5em;
+                line-height: 1em;
+                top: 0em;
+                left: 0;
+            }
+        }
+    }
 }
 
 .sideContent {
     lost-column: 9/12;
+}
+
+.tag {
+    background: alpha($white,.9);
+    color: $blue;
+    margin-top: 5px;
+    display: inline-flex;
+    transition: all .2s ease;
+    font-weight: 800;
+    &:hover {
+        background: alpha($blue,.9);
+        color: $white;
+    }
+    a {
+        padding: 5px 10px;
+    }
+}
+
+.tags {
+    
 }

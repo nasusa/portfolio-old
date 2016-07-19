@@ -1,22 +1,28 @@
-<section class="sidebar box">
-<h2>Search ?</h2>
-		<h1>Categories</h1>
+<div class="sidebar">
+	<section class="box">
+		<form>
+			search here
+		</form>
+	</section>
+	<section class="box">
+		<h5 class="text-uppercase">Categories</h5>
 		<ul>
 			@foreach($categories as $category)
 				<li>
 					@if($category->parent_id > 0)
-						&nbsp;&nbsp;&nbsp;--
+						&nbsp;
 					@endif{{----}}
 					<a href="/categories/{{ $category->slug }}">{{ $category->name }}</a>
 				</li>
 			@endforeach
 		</ul>
-		<h1>Tags</h1>
-		<ul>
+	</section>
+	<section class="box tags">
+		<h5 class="text-uppercase">Tags</h5>
 			@foreach($tags as $tag)
-				<li>
+				<span class="tag">
 					<a href="/tags/{{ $tag->slug }}">{{ $tag->name }}</a>
-				</li>
+				</span>
 			@endforeach
-		</ul>
-</section>
+	</section>
+</div>

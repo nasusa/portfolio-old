@@ -13,19 +13,19 @@ h1, h2, h3, h4, h5, h6 {
     //text-transform: uppercase;
 }
 h1 {
-    font-size: 2.5rem;
+    font-size: 2.5em;
 }
 h2 {
-    font-size: 2rem;
+    font-size: 2em;
 }
 h3 {
-    font-size: 1.75rem;
+    font-size: 1.75em;
 }
 h4 {
-    font-size: 1.5rem;
+    font-size: 1.5em;
 }
 h5 {
-    font-size: 1.25rem;
+    font-size: 1.25em;
 }
 h6 {
     font-size: 1rem;
@@ -41,17 +41,6 @@ small {
 }
 a {
   color: inherit;
-}
-.title {
-  margin-bottom: 1.5rem;
-  h4 {
-    margin: 1.14rem 0 0 0;
-  }
-  p {
-    margin: 0;
-  }
-}
-a {
   text-decoration: none;
 }
 hr {
@@ -63,6 +52,25 @@ img {
     max-width: 100%;
     height: auto;
 }
+.text-lowercase {
+    text-transform: lowercase!important;
+}
+.text-uppercase {
+    text-transform: uppercase!important;
+}
+.text-capitalize {
+    text-transform: capitalize!important;
+}
+.title {
+  margin-bottom: 1.5rem;
+  h4 {
+    margin: 1.14rem 0 0 0;
+  }
+  p {
+    margin: 0;
+  }
+}
+
 .container {
   lost-center: 1140px;
   lost-utility: clearfix;
@@ -105,7 +113,7 @@ img {
 .box {
   margin-top: 10px;
   background-color: $whitetrans;
-  box-shadow: 1px 1.732px 5px 0px rgba(4,5,6,.2);
+  box-shadow: 1px 2px 5px 0px $blacktrans;
   padding: 15px;
   word-wrap: break-word;
 }

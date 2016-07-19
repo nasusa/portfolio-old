@@ -15,7 +15,7 @@
         <div title="To Top" class="back-to-top">
             <span class="fa-stack">
                 <i class="fa fa-circle fa-stack-2x"></i>
-                <i class="fa fa-arrow-up fa-stack-1x fa-inverse"></i>
+                <i class="fa fa-angle-up fa-stack-1x fa-inverse"></i>
             </span>
         </div>
         @include('layouts.partials.scripts')
