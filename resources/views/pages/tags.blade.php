@@ -24,9 +24,12 @@
             <a  class="btn btn-primary" href="{{url('article/'.$article->url)}}">Read More</a>
         </div>
         @endforeach
+        @unless (count($articles))
         <div class="box center">
-            {!! $articles->render() !!}
+            <p>Unfortunately, no items were returned.</p>
         </div>
+        @endunless
+        {!! $articles->render() !!}
     </section>
     @include('layouts.partials.blog_sidebar')
 </div>

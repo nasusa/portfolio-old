@@ -658,6 +658,13 @@ img {
   -webkit-box-pack: center;
   justify-content: center;
 }
+.pagination {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  width: 100%;
+}
 .pagination li {
   display: inline;
   padding: 0.5rem 0.75rem;

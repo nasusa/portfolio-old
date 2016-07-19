@@ -29,12 +29,8 @@ class BlogController extends Controller
     }
 
     public function tags($slug) {
-        if (Tag::findBySlug($slug)->articles()->latest('articles.created_at')->paginate(9)->isEmpty()) {
-            return Redirect::action('BlogController@index')->with('info', 'There is no articles with this Tag!');
-        } else {
-            $articles = Tag::findBySlug($slug)->articles()->latest('articles.created_at')->paginate(9);
-            return view('pages.tags', compact('articles'));
-        }
+        $articles = Tag::findBySlug($slug)->articles()->latest('articles.created_at')->paginate(9);
+        return view('pages.tags', compact('articles'));
     }
 
     public function portfolio() {

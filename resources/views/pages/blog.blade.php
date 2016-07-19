@@ -26,9 +26,12 @@
             <a class="readmore" href="{{url('article/'.$article->slug)}}">Read More</a>
         </article>
         @endforeach
+        @unless (count($articles))
         <div class="box center">
-            {!! $articles->render() !!}
+            <p>Unfortunately, no items were returned.</p>
         </div>
+        @endunless
+        {!! $articles->render() !!}
     </section>
     @include('layouts.partials.blog_sidebar')
 </div>
