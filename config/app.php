@@ -159,7 +159,8 @@ return [
          * Custom Service Providers...
          */
         Dimsav\Translatable\TranslatableServiceProvider::class,
-        Thomaswelton\LaravelGravatar\LaravelGravatarServiceProvider::class
+        Thomaswelton\LaravelGravatar\LaravelGravatarServiceProvider::class,
+        Indal\Markdown\MarkdownServiceProvider::class,
 
     ],
 
@@ -210,6 +211,7 @@ return [
         * Custom Class Aliases...
         */
         'Gravatar' => Thomaswelton\LaravelGravatar\Facades\Gravatar::class,
+        'Markdown' => Indal\Markdown\Facade::class,
     ],
 
 ];

@@ -7,7 +7,7 @@
 <div class="container">
     <section class="sideContent">
         @foreach ($articles as $article)
-        <article id="{{$article->id}}"class="box">
+        <article id="{{$article->id}}" class="box">
             <a href="{{url('article/'.$article->slug)}}">
                 <img src="{{$article->image}}">
             </a>
@@ -22,7 +22,7 @@
                     <dd><i class="fa fa-tags"></i> @foreach($article->tags as $key => $tag)<a href="/tags/{{ $tag->slug }}"> {{ $tag->name }}</a>@endforeach</dd>
                 </dl>
             </header>
-            {!! str_limit($article->body_html, $limit = 200, $end = '...') !!}</p>
+            @markdown((str_limit($article->body, 200, '...')))
             <a class="readmore" href="{{url('article/'.$article->slug)}}">Read More</a>
         </article>
         @endforeach

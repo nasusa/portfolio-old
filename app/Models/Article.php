@@ -27,11 +27,6 @@ class Article extends Model
     {
         return $this->tags->lists('id');
     }
-    public function getBodyHtmlAttribute()
-    {
-        $Parsedown = new \Parsedown();
-        return $Parsedown->text($this->body);
-    }
     public function setCreatedAtAttribute($date)
     {
         if (is_string($date)) {

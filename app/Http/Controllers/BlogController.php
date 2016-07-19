@@ -24,12 +24,8 @@ class BlogController extends Controller
     }
 
     public function categories($slug) {
-        if (Category::findBySlug($slug)->articles()->latest()->paginate(9)->isEmpty()) {
-            return Redirect::action('BlogController@index')->with('info', 'There is no articles in this category!');
-        } else {
-            $articles = Category::findBySlug($slug)->articles()->latest()->paginate(9);
-            return view('pages.categories', compact('articles'));
-        }
+        $articles = Category::findBySlug($slug)->articles()->latest()->paginate(9);
+        return view('pages.categories', compact('articles'));
     }
 
     public function tags($slug) {
