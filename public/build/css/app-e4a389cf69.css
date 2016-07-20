@@ -1075,6 +1075,49 @@ article p {
 .tag a {
   padding: 5px 10px;
 }
+.cookie-consent {
+  bottom: 0;
+  position: fixed;
+  text-align: center;
+  background: rgba(255,133,27,0.9);
+  width: 100%;
+  display: table;
+  padding: 10px;
+}
+.cookie-consent span {
+  font-weight: 800;
+  color: #d13f19;
+}
+.cookie-consent button {
+  font-size: 13px;
+  padding: 10px 22px;
+  border-radius: 3px;
+  background-color: rgba(209,63,25,0.9);
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+  font-family: 'Roboto Mono', monospace;
+  line-height: 1em;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border: none;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  margin: 5px;
+}
+.cookie-consent button:hover,
+.cookie-consent button:focus {
+  background-color: rgba(199,60,24,0.9);
+  color: #f7f7f7;
+  border: none;
+}
+.cookie-consent button:active {
+  background-color: rgba(188,57,23,0.9);
+}
 .flashmessage {
   color: #fff;
   padding: 15px;

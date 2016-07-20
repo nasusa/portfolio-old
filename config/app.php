@@ -161,6 +161,7 @@ return [
         Dimsav\Translatable\TranslatableServiceProvider::class,
         Thomaswelton\LaravelGravatar\LaravelGravatarServiceProvider::class,
         Indal\Markdown\MarkdownServiceProvider::class,
+        Spatie\CookieConsent\CookieConsentServiceProvider::class,
 
     ],
 

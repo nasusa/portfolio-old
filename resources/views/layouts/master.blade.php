@@ -20,5 +20,6 @@
         </div>
         @include('layouts.partials.scripts')
         @yield('scripts')
+        @include('cookieConsent::index')
     </body>
 </html>
