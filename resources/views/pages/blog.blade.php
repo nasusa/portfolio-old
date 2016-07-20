@@ -17,12 +17,20 @@
                 </a>
                 <dl>
                     <dd><i class="fa fa-user"></i> {{$article->user->name}}</dd>
-                    <dd><i class="fa fa-clock-o"></i> <time datetime="{{$article->created_at}}">{{$article->created_at->diffForHumans()}}</time></dd>
+                    <dd><i class="fa fa-clock-o"></i> <time title="{{$article->created_at->format('D, j. F Y')}}">{{$article->created_at->diffForHumans()}}</time></dd>
                     <dd><i class="fa fa-folder"></i> <a href="/categories/{{ $article->category->slug }}">{{ $article->category->name }}</a></dd>
                     <dd><i class="fa fa-tags"></i> @foreach($article->tags as $key => $tag)<a href="/tags/{{ $tag->slug }}"> {{ $tag->name }}</a>@endforeach</dd>
                 </dl>
             </header>
             @markdown((str_limit($article->body, 200, '...')))
+            <div class="social-share">
+            <a href="/"><i class="fa fa-facebook-official fa-fw" aria-hidden="true"></i></a>
+            <a href="/"><i class="fa fa-twitter fa-fw" aria-hidden="true"></i></a>
+            <a href="/"><i class="fa fa-google-plus fa-fw" aria-hidden="true"></i></a>
+            <a href="/"><i class="fa fa-linkedin fa-fw" aria-hidden="true"></i></a>
+            <a href="/"><i class="fa fa-reddit-alien fa-fw" aria-hidden="true"></i></a>
+            <a href="/"><i class="fa fa-medium fa-fw" aria-hidden="true"></i></a>
+            </div>
             <a class="readmore" href="{{url('article/'.$article->slug)}}">Read More</a>
         </article>
         @endforeach

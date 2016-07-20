@@ -933,8 +933,9 @@ article img {
   min-width: 100%;
 }
 article header {
-  border-bottom: 1px solid #0074d9;
-  padding: 30px 30px 15px 30px;
+  border-bottom: 2px solid #0074d9;
+  margin: 0 30px;
+  padding: 10px 0;
 }
 article header h4 {
   text-align: center;
@@ -942,18 +943,42 @@ article header h4 {
 article dl {
   display: -webkit-box;
   display: flex;
-  justify-content: space-around;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+}
+article dl dd {
+  margin: 0 10px;
 }
 article p {
-  padding: 30px 30px 15px 30px;
+  padding: 15px 30px;
 }
-article .readmore {
+.readmore {
   display: block;
   background-color: #0074d9;
   padding: 15px;
   text-align: center;
   color: #fff;
   float: right;
+}
+.social-share {
+  position: absolute;
+  margin-left: 15px;
+}
+.social-share a {
+  display: -webkit-inline-box;
+  display: inline-flex;
+  margin: 0 5px;
+  padding: 15px 5px;
+  font-size: 16px;
+  color: #aaa;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+.social-share a:hover {
+  color: #0074d9;
+}
+.social-share a .fa {
+  text-shadow: 1px 1px 1px #fff;
 }
 .sidebar {
   -webkit-box-flex: 0;

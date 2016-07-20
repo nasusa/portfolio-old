@@ -11,9 +11,10 @@ article {
     }
 
     header {
-        border-bottom: 1px solid $blue;
+        border-bottom: 2px solid $blue;
         //margin-bottom: 15px;
-        padding: 30px 30px 15px 30px;
+        margin: 0 30px;
+        padding: 10px 0;
         h4 {
             text-align: center;
         }
@@ -21,19 +22,41 @@ article {
 
     dl {
             display:flex;
-            justify-content: space-around;
+            justify-content: space-between;
+            dd {
+                margin 0 10px;
+            }
         }
     
     p {
-        padding: 30px 30px 15px 30px;
+        padding: 15px 30px;
     }
-    .readmore {
-        display:block;
-        background-color: $blue;
-        padding: 15px;
-        text-align: center;
-        color: $white;   
-        float: right; 
-    }
+    
+}
+.readmore {
+    display:block;
+    background-color: $blue;
+    padding: 15px;
+    text-align: center;
+    color: $white;   
+    float: right; 
+}
 
+.social-share {
+    position: absolute;
+    margin-left: 15px;
+    a {
+        display: inline-flex;
+        margin: 0 5px;
+        padding: 15px 5px;
+        font-size: 16px;
+        color: $gray;
+        transition: all .2s ease;
+        &:hover {
+            color: $blue;
+        }
+        .fa {
+            text-shadow: 1px 1px 1px $white;
+        }
+    }
 }
