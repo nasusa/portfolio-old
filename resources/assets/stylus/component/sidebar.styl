@@ -1,6 +1,8 @@
 .sidebar {
     lost-column: 3/12;
-
+    +below(1000px){
+        display:none;
+    }
     li {
         padding: 5px 0;
         position: relative;
@@ -27,6 +29,9 @@
 
 .sideContent {
     lost-column: 9/12;
+    +below(1000px){
+        lost-column: 1;
+    }
 }
 
 .tag {

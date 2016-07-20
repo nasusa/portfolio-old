@@ -996,6 +996,11 @@ article p {
   margin-right: 0;
   margin-left: auto;
 }
+@media only screen and (max-width: 1000px) {
+  .sidebar {
+    display: none;
+  }
+}
 .sidebar li {
   padding: 5px 0;
   position: relative;
@@ -1034,6 +1039,24 @@ article p {
 .sideContent:nth-child(12n) {
   margin-right: 0;
   margin-left: auto;
+}
+@media only screen and (max-width: 1000px) {
+  .sideContent {
+    -webkit-box-flex: 0;
+    flex: 0 0 auto;
+    width: calc(99.9% * 1 - (15px - 15px * 1));
+  }
+  .sideContent:nth-child(1n) {
+    margin-right: 15px;
+    margin-left: 0;
+  }
+  .sideContent:last-child {
+    margin-right: 0;
+  }
+  .sideContent:nth-child(undefinedn) {
+    margin-right: 0;
+    margin-left: auto;
+  }
 }
 .tag {
   background: rgba(255,255,255,0.9);
