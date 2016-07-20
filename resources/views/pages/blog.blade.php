@@ -24,9 +24,24 @@
             </header>
             @markdown((str_limit($article->body, 200, '...')))
             <div class="social-share">
-            <a href="/"><i class="fa fa-facebook-official fa-fw" aria-hidden="true"></i></a>
-            <a href="/"><i class="fa fa-twitter fa-fw" aria-hidden="true"></i></a>
-            <a href="/"><i class="fa fa-google-plus fa-fw" aria-hidden="true"></i></a>
+            <a href="http://www.facebook.com/sharer.php?u={{rawurlencode(url('article/'.$article->slug))}}&title={{$article->title}}" 
+                onclick="window.open(this.href, 'windowName', 'width=600, height=400, left=24, top=24, scrollbars, resizable'); return false;" 
+                rel="nofollow" 
+                data-original-title="Share on Facebook">
+                <i class="fa fa-facebook-official fa-fw" aria-hidden="true">
+                </i>
+            </a>
+            <a href="http://www.twitter.com/share?url={{rawurlencode(url('article/'.$article->slug))}}&title={{$article->title}}" 
+                onclick="window.open(this.href, 'windowName', 'width=600, height=400, left=24, top=24, scrollbars, resizable'); return false;" 
+                rel="nofollow" 
+                data-original-title="Share on Twitter">
+                <i class="fa fa-twitter fa-fw" aria-hidden="true"></i>
+            </a>
+            <a href="https://plus.google.com/share?url={{rawurlencode(url('article/'.$article->slug))}}&title={{$article->title}}" 
+                onclick="window.open(this.href, 'windowName', 'width=600, height=400, left=24, top=24, scrollbars, resizable'); return false;" 
+                rel="nofollow" 
+                data-original-title="Share on Google+">
+                <i class="fa fa-google-plus fa-fw" aria-hidden="true"></i></a>
             <a href="/"><i class="fa fa-linkedin fa-fw" aria-hidden="true"></i></a>
             <a href="/"><i class="fa fa-reddit-alien fa-fw" aria-hidden="true"></i></a>
             <a href="/"><i class="fa fa-medium fa-fw" aria-hidden="true"></i></a>
