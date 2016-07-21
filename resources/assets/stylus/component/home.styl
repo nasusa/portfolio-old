@@ -1,33 +1,25 @@
-.hero { 
-    h1 {
-        margin: 2.1rem 0 0 0;
-        font-weight: bold;
-   } 
-    h5 {
-        margin: 0 0 1rem 0;
+.mainhero {
+    height: 500px;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center 50%;
+    z-index: -1;
+    background-image: url(/images/forest.jpg);
+    animation: slider-lg ease-in-out 10s both infinite; 
+    +mobile() {
+        background-position: center bottom;
     }
-    .button {
-        
-        background-color: $black;
-        color: white;
-        padding: 15px;
-        display: inline-block;
-        width: 150px;
-    }
-}
-.whatDo {
-    padding: 15px;
-    &:hover {
-        transform: scale(1.1);
-        transition: transform .2s linear;
-        }
-    p {
-        color: $darkgray;
-    }
-    i {
-        color: $blue;
-    }
-}
-figure {
-    figure();
+} 
+
+@keyframes slider-lg {
+  0% {
+    background-image: url(/images/forest.jpg); 
+  }
+  50% {
+    background-image: url(/images/city.jpg); 
+  }
+  100% {
+    background-image: url(/images/forest.jpg);
+  } 
 }

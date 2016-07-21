@@ -44,7 +44,7 @@ elixir(function(mix) {
         interlaced: true
     })
     .browserSync({ 
-        proxy: 'cv.dev',
+        proxy: 'laravel.dev',
         notify: false
     });
 });

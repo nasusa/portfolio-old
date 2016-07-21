@@ -2,7 +2,7 @@
 <html>
     <head>
         @include('layouts.partials.meta') 
-        <title>Alan Aasmaa - @yield('title')</title>
+        <title>l - @yield('title')</title>
         @include('layouts.partials.css') 
         @yield('styles')
         @include('layouts.partials.shim')
