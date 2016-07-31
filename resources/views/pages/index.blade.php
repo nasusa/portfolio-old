@@ -11,6 +11,12 @@
 </section>
 
 <section class="containerbox">
+<div class="third">
+</div>
+<div class="third">
+</div>
+<div class="third">
+</div>
 </section>
 @section('scripts')
 @stop

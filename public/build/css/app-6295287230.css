@@ -516,6 +516,7 @@ img {
   border-radius: 25px;
   color: #222;
   height: 500px;
+  padding: 30px;
 }
 .containerbox:before {
   content: '';
@@ -525,6 +526,24 @@ img {
   content: '';
   display: table;
   clear: both;
+}
+.third {
+  -webkit-box-flex: 0;
+  flex: 0 0 auto;
+  width: calc(99.9% * 1/3 - (15px - 15px * 1/3));
+  height: 100px;
+  background: #0074d9;
+}
+.third:nth-child(1n) {
+  margin-right: 15px;
+  margin-left: 0;
+}
+.third:last-child {
+  margin-right: 0;
+}
+.third:nth-child(3n) {
+  margin-right: 0;
+  margin-left: auto;
 }
 .navbar {
   line-height: 90px;
