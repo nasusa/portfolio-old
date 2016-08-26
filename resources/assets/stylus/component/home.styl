@@ -7,10 +7,44 @@
     z-index: -1;
     background-image: url(/images/forest.jpg);
     animation: slider-lg ease-in-out 10s both infinite; 
+}
+
+.padding {
+    margin: auto;
+    width: 60%;
+    height:100%;
+}
+
+.content {
+    height: 100%;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 2.5em  
+    display: -webkit-flex;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+}
+
+.kuvaboksi { 
+    .third img {
+        height: 250px;
+    }
+    .second img {
+        height: 350px;
+    }
+}
+
+.SL {
+    width: 200px;
+    height: 200px;
+    border-radius:50%;
+    box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
     +mobile() {
         background-position: center bottom;
-    }
-} 
+    } 
+
 
 @keyframes slider-lg {
   0% {

@@ -3,12 +3,26 @@ var elixir = require('laravel-elixir'),
     rupture = require('rupture'),
     lost = require('lost'),
     axis = require('axis');
+    htmlmin = require('gulp-htmlmin');
 
 require('laravel-elixir-stylus');
 require('laravel-elixir-imagemin');
-//require('laravel-elixir-minify-html');
 
 elixir.config.sourcemaps = true;
+
+elixir.extend('compress', function() {
+    new elixir.Task('compress', function() {
+        return gulp.src('./storage/framework/views/*')
+            .pipe(htmlmin({
+                collapseWhitespace:    true,
+                removeAttributeQuotes: true,
+                removeComments:        true,
+                minifyJS:              true,
+            }))
+            .pipe(gulp.dest('./storage/framework/views/'));
+    })
+    .watch('./resources/views/**/*.blade.php');
+});
 
 elixir(function(mix) {
 
@@ -24,27 +38,19 @@ elixir(function(mix) {
     .version([
     	'css/app.css'
     ])
-    /*.html(
-        'storage/framework/views/*',
-        'storage/framework/views/', 
-        {
-            collapseWhitespace: true, 
-            removeAttributeQuotes: true, 
-            removeComments: true, 
-            minifyJS: true
-        }
-    )*/
+
     .scripts([
         'components/**/*.js',
         'app.js'
     ])
     .imagemin({
-        optimizationLevel: 3,
+        optimizationLevel: 5,
         progressive: true,
         interlaced: true
     })
     .browserSync({ 
         proxy: 'laravel.dev',
         notify: false
-    });
+    })
+    .compress();
 });
