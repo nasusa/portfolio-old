@@ -52,5 +52,5 @@ elixir(function(mix) {
         proxy: 'laravel.dev',
         notify: false
     })
-    .compress();
+    //.compress();
 });

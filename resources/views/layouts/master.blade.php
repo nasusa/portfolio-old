@@ -3,7 +3,7 @@
     <head>
         @include('layouts.partials.meta') 
         <title>l - @yield('title')</title>
-        @include('layouts.partials.css') 
+        @include('layouts.partials.css')
         @yield('styles')
         @include('layouts.partials.shim')
     </head>

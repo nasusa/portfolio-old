@@ -471,7 +471,7 @@ img {
   bottom: 1em;
   right: 1em;
   display: inline-block;
-  color: rgba(0,116,217,0.9);
+  color: rgba(34,34,34,0.9);
   font-size: 1.5em;
 }
 @media only screen and (max-width: 450px) {
@@ -609,6 +609,7 @@ img {
   flex: 0 0 auto;
   width: calc(99.9% * 1.5/3 - (15px - 15px * 1.5/3));
   color: #fff;
+  font-size: 1.5em;
 }
 .navbar div:last-child:nth-child(1n) {
   margin-right: 15px;
@@ -631,6 +632,60 @@ img {
 .navbar div:last-child ul li {
   margin: 0 10px;
 }
+footer {
+  background: #555;
+  margin-top: -40px;
+  padding-top: 30px;
+  z-index: -1;
+  position: absolute;
+  width: 100%;
+}
+footer img {
+  border-radius: 50%;
+  height: 100px;
+  margin: 2em;
+}
+footer section {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+}
+footer section ul {
+  display: -webkit-inline-box;
+  display: inline-flex;
+  margin-bottom: 2em;
+}
+footer section ul li {
+  border: 1px solid #fff;
+  border-radius: 10px;
+  font-size: 1.5em;
+  color: #fff;
+  padding: 10px;
+  margin: 1em 0.15em;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+footer section ul li:hover {
+  background-color: #808080;
+  border-color: #808080;
+}
+footer section:last-child {
+  background: #222;
+  height: 100px;
+  color: #fff;
+}
+footer section:last-child .diamond_icon {
+  font-size: 3em;
+  margin-top: -50px;
+  margin-bottom: 30px;
+  text-shadow: 1px 1px #000, 2px 2px #000, 3px 3px #000;
+}
 .mainhero {
   height: 500px;
   position: relative;
@@ -649,12 +704,30 @@ img {
 }
 .content {
   height: 100%;
-  font-family: 'Open Sans Condensed', sans-serif;
-  font-size: 2.5em;
+  font-size: 3em;
   display: -webkit-flex;
   -webkit-box-align: center;
   align-items: center;
   -webkit-justify-content: center;
+}
+.pacifico {
+  font-family: 'Pacifico', cursive;
+  color: #fff;
+  text-shadow: 1px 1px #000, 2px 2px #000, 3px 3px #000;
+}
+.pacificoh2 {
+  font-family: 'Pacifico', cursive;
+  color: #222;
+}
+figure figcaption {
+  text-align: center;
+  font-size: 1.5em;
+  color: #222;
+  margin: 1.5em;
+}
+figure figcaption .header {
+  margin-bottom: 5px;
+  font-weight: bold;
 }
 .kuvaboksi .third img {
   height: 250px;
@@ -662,7 +735,7 @@ img {
 .kuvaboksi .second img {
   height: 350px;
 }
-.SL {
+.headerimg {
   width: 200px;
   height: 200px;
   border-radius: 50%;
@@ -763,6 +836,5 @@ img {
 .flashmessage p {
   margin: 0;
 }
-@import 'https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300';
 
 /*# sourceMappingURL=app.css.map */
