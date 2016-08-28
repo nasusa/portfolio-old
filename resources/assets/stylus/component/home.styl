@@ -24,6 +24,7 @@
     -webkit-justify-content: center;
 }
 .pacifico {
+    font-size: 0.8em;
     font-family: 'Pacifico', cursive;
     color: white;
     text-shadow: 1px 1px #000000, 
@@ -33,6 +34,22 @@
 .pacificoh2 {
     font-family: 'Pacifico', cursive;
     color: black;
+}
+.sloganheader {
+    color: white;
+    text-shadow: 1px 1px #000000, 
+                2px 2px #000000, 
+                3px 3px #000000;
+    letter-spacing: -1px;
+}
+.slogan {
+    font-size: 0.3em;
+    color: white;
+    text-shadow: 1px 1px #000000, 
+                 2px 2px #000000, 
+                 3px 3px #000000;
+    letter-spacing: 2px;
+    font-weight: bold;
 }
 figure figcaption {
     text-align: center;
@@ -54,16 +71,42 @@ figure figcaption {
 }
 
 .headerimg {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     border-radius:50%;
     box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-
     +mobile() {
         background-position: center bottom;
     } 
 
+// Border-line
+.fancy {
+  line-height: 0.5;
+  text-align: center;
+}
+.fancy span {
+  display: inline-block;
+  position: relative;  
+}
+.fancy span:before,
+.fancy span:after {
+  content: "";
+  position: absolute;
+  height: 5px;
+  border-bottom: 1px solid white;
+  border-top: 1px solid white;
+  top: 0;
+  width: 600px;
+}
+.fancy span:before {
+  right: 100%;
+  margin-right: 15px;
+}
+.fancy span:after {
+  left: 100%;
+  margin-left: 15px;
+}
 
 @keyframes slider-lg {
   0% {
