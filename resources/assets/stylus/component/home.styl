@@ -8,7 +8,6 @@
     background-image: url(/images/forest.jpg);
     animation: slider-lg ease-in-out 10s both infinite; 
 }
-
 .padding {
     margin: auto;
     width: 60%;
@@ -46,8 +45,7 @@
     font-size: 0.3em;
     color: white;
     text-shadow: 1px 1px #000000, 
-                 2px 2px #000000, 
-                 3px 3px #000000;
+                 2px 2px #000000;
     letter-spacing: 2px;
     font-weight: bold;
 }
@@ -56,6 +54,9 @@ figure figcaption {
     font-size: 1.5em;
     color: black;
     margin: 1.5em;
+    a:hover {
+        text-decoration: underline;
+        }
     .header {
         margin-bottom:5px;
         font-weight: bold;
@@ -97,7 +98,7 @@ figure figcaption {
   border-bottom: 1px solid white;
   border-top: 1px solid white;
   top: 0;
-  width: 600px;
+  width:100%;
 }
 .fancy span:before {
   right: 100%;
@@ -110,7 +111,7 @@ figure figcaption {
 
 @keyframes slider-lg {
   0% {
-    background-image: url(/images/forest.jpg); 
+    background-image: url(/images/forest.jpg);
   }
   50% {
     background-image: url(/images/city.jpg); 
