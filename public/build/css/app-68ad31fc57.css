@@ -655,7 +655,7 @@ nav div:last-child ul {
   display: inline-flex;
 }
 nav div:last-child ul li {
-  margin: 0 10px;
+  margin: 0 5px;
 }
 footer {
   background: #555;
