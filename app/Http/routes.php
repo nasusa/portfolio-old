@@ -10,11 +10,9 @@
 | and give it the controller to call when that URI is requested.
 |
 */
-Route::auth();
-Route::get('/', 'PageController@index');
-Route::get('tags/{slug}', 'BlogController@tags');
-Route::get('categories/{slug}', 'BlogController@categories');
-Route::get('blog', 'BlogController@index');
-Route::get('article/{slug}', 'BlogController@article');
-Route::get('portfolio', 'BlogController@portfolio');
-Route::get('portfolio/{slug}', 'BlogController@portfolioItem');
+Route::get('/', function () {
+    return view('pages.index');
+});
+Route::get('aboutme', function () {
+    return view('pages.aboutme');
+});
