@@ -1,6 +1,6 @@
-# Alan Aasmaa Portfolio/CV
+# Susanna Lepola Portfolio/CV
 
-Here you can see how i'm building my Portfolio !
+Pushing code like badass
 
 
 ### I use these awesome systems. 
@@ -46,9 +46,3 @@ Here you can see how i'm building my Portfolio !
     * Portfolio
     * Portfolio Item   
 * Making site 100% mobile first
-
-### Possible features
-* User Registration
-    * User Profile's
-* Public blog ? 
-    * Not so public but public
