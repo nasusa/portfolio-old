@@ -875,6 +875,15 @@ figure figcaption .header {
 .cookie-consent button:active {
   background-color: rgba(188,57,23,0.9);
 }
+.otsake {
+  height: 500px;
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center 50%;
+  z-index: -1;
+  background-image: url("/images/forest.jpg");
+}
 .flashmessage {
   color: #fff;
   padding: 15px;
