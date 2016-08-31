@@ -23,19 +23,19 @@
 <!-- Container box and inside boxes -->
 <section class="containerbox">
     <div class="row kuvaboksi">
-        <figure class="third">
+        <figure class="first">
             <img src="/images/computer.jpg" class="box">
             <figcaption><span class="header"><a href="{{url('/')}}" class="{!! set_active('/')">GREAT PROJECTS <i class="fa fa-angle-right" aria-hidden="true"></i></a></span>
             <br> Go check my awesome projects from school and home. I love new projects, I learn from them a lot! I have now my school thesis-project going on, RGB-led-project with Arduino. Go check it out!
             </figcaption>
         </figure>
-        <figure class="third">
+        <figure class="first">
             <img src="/images/design.jpg" class="box">
             <figcaption><span class="header"><a href="{{url('/')}}" class="{!! set_active('/')">UNIQUE DESIGN <i class="fa fa-angle-right" aria-hidden="true"></i></a></span>
             <br> Newest thing what I want to learn. No, what I am going to learn; design. I know I have skills for this stuff. "Design is not just what it looks like and feels like. Design is how it works." - Steve Jobs
             </figcaption>
         </figure>
-        <figure class="third">
+        <figure class="first">
             <img src="/images/camera.jpg" class="box">
             <figcaption><span class="header"><i class="fa fa-heart-o" aria-hidden="true"></i></span>
             <br> My computer hobby is my biggest passion, but my life holds lot of other stuff too. I have natural need to create, imagine, design from graffiti and photographing. I love to find new things, learn new things, go to new places and meet new people. 

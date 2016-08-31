@@ -8,21 +8,16 @@
 @section('content')
 
 <section class="otsake">
-    <div class="padding">
-        <div class="content">
-            <ul>
-                <li align="center"> <img class ="headerimg" src="images/SL.jpg"> </li>
-                <li align="center"><span class="pacifico">I am Susanna</span></li>
-                <li class="fancy"><span class="slogan"> DESIGNER <i class="fa fa-angle-double-right" aria-hidden="true"></i> ICT TECHNICIAN <i class="fa fa-angle-double-right" aria-hidden="true"></i> DREAMER </span></li>
-                <li align="center"><span class="pacifico">Welcome to my Portfolio</span> </li>
-            </ul>
-        </div>
-    </div>
-</section>
 </section>
 
 <!-- Container box and inside boxes -->
-<section class="containerbox">
+    <div class="content">
+        <ul>
+            <li class="center"> <img class ="aboutmeimg" src="images/SL.jpg"> </li>
+        </ul>
+    </div>
+
+<section class="container">
     <div class="row kuvaboksi">
         <figure class="third">
             <figcaption><span class="header"><a href="{{url('/')}}" class="{!! set_active('/')">GREAT PROJECTS <i class="fa fa-angle-right" aria-hidden="true"></i></a></span>
@@ -40,19 +35,91 @@
             </figcaption>
         </figure>
     </div>
-    <div class="row kuvaboksi">
-        <figure class="second">
-            <figcaption><span class="pacificoh2"><a href="{{url('/')}}" class="{!! set_active('/')">About me... <i class="fa fa-angle-right" aria-hidden="true"></i></a></span>
-            <br> I’m a coffee addicted pixel and code pusher from Finland. Beside my passion for computers and coding, I’m also a big music freak and a real foodie who loves all of the good things in life. 
-            </figcaption>
-        </figure>
-        <figure class="second">
-            <figcaption><span class="pacificoh2"><a href="{{url('/')}}" class="{!! set_active('/')">Buy me coffee... <i class="fa fa-angle-right" aria-hidden="true"></i></a></span>
-            <br> if I provide useful or helpful with some of your project, or you just want to have a lovely chat/ask something; don’t be afraid to contact me.
-            </figcaption>
-        </figure>
+</section>
+
+<section class="container">
+    <div class="second">
+        <ul class="skill">
+            <li>
+                <span style="width: 80%;"><strong>Web Application 80%</strong></span>
+            </li> 
+            <li>
+                <span style="width: 100%;"><strong>Respoinsive Web Design 100%</strong></span>
+            </li> 
+            <li>
+                <span style="width: 70%;"><strong>User Experience 70%</strong></span>
+            </li> 
+        </ul>
+    </div>
+    <div class="second">
+        <ul class="skill">
+            <li>
+                <div class="skill-wrap">
+                    <span style="width: 70%;"><strong>Apps Development 70%</strong></span>
+                </div>
+            </li> 
+            <li>
+                <div class="skill-wrap">
+                    <span style="width: 90%;"><strong>Photography 90%</strong></span>
+                </div>
+            </li> 
+            <li>
+                <div class="skill-wrap">
+                    <span style="width: 80%;"><strong>Marketing 80%</strong></span>
+                </div>
+            </li> 
+        </ul>
     </div>
 </section>
+
+<!-- STATSIT-->
+<div class="stats">
+<div class="color">
+        <div class="container">
+            <div class="title">
+                <h1>STATUS</h1>
+                <span class="border"></span>
+            </div>
+        </div>
+
+<div class="container">
+    <div class="yksi">
+        <i class="fa fa-bed" aria-hidden="true"></i>
+            <span class="sum">
+                0
+            </span>
+            <span>
+                SLEEPED HOURS
+            </span>
+    </div>
+    <div class="yksi">
+        <i class="fa fa-coffee" aria-hidden="true"></i>
+            <span class="sum">
+                999</span>
+               <span> COFFEES
+            </span>
+    </div>
+    <div class="yksi">
+        <i class="fa fa-code" aria-hidden="true"></i>
+            <span class="sum">
+                1000
+            </span>
+            <span>
+                LINES OF CODE
+            </span>
+    </div>
+    <div class="yksi">
+        <i class="fa fa-lightbulb-o" aria-hidden="true"></i>
+            <span class="sum">
+                2
+            </span>
+            <span>
+                UNFINISHED PROJECTS
+            </span>
+    </div>
+</div>
+</div>
+</div>
 
 @section('scripts')
 @stop
