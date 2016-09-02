@@ -45,7 +45,7 @@
     <div class="row kuvaboksi">
         <figure class="second">
             <img src="/images/me.jpg" class="box">
-            <figcaption><span class="pacificoh2"><a href="{{url('/')}}" class="{!! set_active('/')">About me... <i class="fa fa-angle-right" aria-hidden="true"></i></a></span>
+            <figcaption><span class="pacificoh2"><a href="{{url('aboutme')}}" class="{!! set_active('/')">About me... <i class="fa fa-angle-right" aria-hidden="true"></i></a></span>
             <br> I’m a coffee addicted pixel and code pusher from Finland. Beside my passion for computers and coding, I’m also a big music freak and a real foodie who loves all of the good things in life. 
             </figcaption>
         </figure>

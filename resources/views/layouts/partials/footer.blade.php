@@ -1,6 +1,6 @@
 <footer>
     <section>
-            <img src="images/SL.jpg">
+            <img src="images/logo.png">
         <ul>
             <li><a href="https://www.facebook.com/susannalepolan"><i class="fa fa-facebook fa-fw" aria-hidden="true"></i></a></li>
             <li><a href="https://www.instagram.com/susannalepola/"><i class="fa fa-instagram fa-fw" aria-hidden="true"></i></a></li>
