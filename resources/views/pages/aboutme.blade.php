@@ -41,13 +41,13 @@
     <div class="second">
         <ul class="skill">
             <li>
-                <span style="width: 80%;"><strong>Web Application 80%</strong></span>
+                <span style="width: 100%;"><strong>Teamwork skills 100%</strong></span>
             </li> 
             <li>
-                <span style="width: 100%;"><strong>Respoinsive Web Design 100%</strong></span>
+                <span style="width: 85%;"><strong>Desicion-making 85%</strong></span>
             </li> 
             <li>
-                <span style="width: 70%;"><strong>User Experience 70%</strong></span>
+                <span style="width: 90%;"><strong>Communication 90%</strong></span>
             </li> 
         </ul>
     </div>
@@ -55,17 +55,17 @@
         <ul class="skill">
             <li>
                 <div class="skill-wrap">
-                    <span style="width: 70%;"><strong>Apps Development 70%</strong></span>
+                    <span style="width: 80%;"><strong>Planning and prioritizing 80%</strong></span>
                 </div>
             </li> 
             <li>
                 <div class="skill-wrap">
-                    <span style="width: 90%;"><strong>Photography 90%</strong></span>
+                    <span style="width: 100%;"><strong>Research/critical thinking 100%</strong></span>
                 </div>
             </li> 
             <li>
                 <div class="skill-wrap">
-                    <span style="width: 80%;"><strong>Marketing 80%</strong></span>
+                    <span style="width: 75%;"><strong>Social media expertise 75%</strong></span>
                 </div>
             </li> 
         </ul>

@@ -2,7 +2,7 @@
     <section class="container">
         <div>
             <span>
-                <a href="{{url('/')}}" title="l" id="logo"><span class="pacifico">Portfolio</span></a>
+                <a href="{{url('/')}}" title="Susannalepola" id="logo"><img src="images/logo.png"></a>
             </span>
         </div>
         <div>
@@ -13,10 +13,10 @@
             </ul>
         </div>
         <div>
-            <ul>
+            <ul> 
                 <li><i class="fa fa-map-marker" aria-hidden="true"></i> Finland</li>
                 <li><i class="fa fa-mobile" aria-hidden="true"></i> +35800 000 0000</li>
             </ul>
         </div>
     </section>
-</nav>
+</nav> 
