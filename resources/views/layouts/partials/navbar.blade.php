@@ -2,7 +2,7 @@
     <section class="container">
         <div>
             <span>
-                <a href="{{url('/')}}" title="Susannalepola" id="logo"><img src="images/logo.png"></a>
+                <!--<a href="{{url('/')}}" title="Susannalepola" id="logo"><img src="images/logo.png"></a>-->
             </span>
         </div>
         <div>

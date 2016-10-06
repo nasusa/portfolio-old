@@ -10,7 +10,7 @@
     <div class="padding">
         <div class="content">
             <ul>
-                <li align="center"> <img class ="headerimg" src="images/SL.jpg"> </li>
+                <!--<li align="center"> <img class ="headerimg" src="images/SL.jpg"> </li>-->
                 <li align="center"><span class="pacifico">I am Susanna</span></li>
                 <li class="fancy"><span class="slogan"> DESIGNER <i class="fa fa-angle-double-right" aria-hidden="true"></i> ICT TECHNICIAN <i class="fa fa-angle-double-right" aria-hidden="true"></i> DREAMER </span></li>
                 <li align="center"><span class="pacifico">Welcome to my Portfolio</span> </li>
