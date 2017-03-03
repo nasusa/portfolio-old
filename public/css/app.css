@@ -859,7 +859,7 @@ figure figcaption .header {
   background-repeat: no-repeat;
   background-position: center 50%;
   z-index: -1;
-  background-image: url("/images/bg.jpeg");
+  background: #87ceeb;
 }
 .aboutmeimg {
   width: 400px;
@@ -997,12 +997,48 @@ figure figcaption .header {
   margin-bottom: 20px;
 }
 .headkuva {
-  height: 730px;
+  height: 500px;
   position: relative;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center 40%;
-  background-image: url("/images/susa.jpg");
+/* global */
+/* grid */
+}
+.headkuva *,
+.headkuva *:before,
+.headkuva *:after {
+  box-sizing: border-box;
+}
+.headkuva .clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.headkuva .wrapper {
+  margin: 0 auto;
+  padding: 100px;
+  max-width: 100%;
+}
+.headkuva .bannerrow {
+  display: -webkit-box;
+  display: flex;
+  flex-flow: row wrap;
+  margin: 0;
+  margin-bottom: 0px;
+}
+.headkuva .bannerrow:last-child {
+  margin-bottom: 0;
+}
+.headkuva [class*="col-"] {
+  padding: 10px;
+  width: 100%;
+}
+.headkuva .col-1-4 .img {
+  -webkit-filter: grayscale(50%);
+  filter: grayscale(50%);
+}
+@media all and (min-width: 600px) {
+  .headkuva .col-1-4 {
+    width: 25%;
+  }
 }
 .flashmessage {
   color: #fff;

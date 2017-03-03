@@ -8,6 +8,22 @@
 @section('content')
 
 <section class="headkuva">
+  <div class="wrapper">
+    <div class="bannerrow">
+      <div class="col-1-4">
+        <img src="http://res.cloudinary.com/dpnzwgeil/image/upload/v1488537401/portfolio_xhgjki.jpg">
+      </div>
+      <div class="col-1-4">
+        <img src="http://res.cloudinary.com/dpnzwgeil/image/upload/v1488537401/pexels-photo_hfh26w.jpg">
+      </div>
+      <div class="col-1-4">
+        <img src="http://res.cloudinary.com/dpnzwgeil/image/upload/v1488537546/4_opgc5n.jpg">
+      </div>
+      <div class="col-1-4">
+        <img src="http://res.cloudinary.com/dpnzwgeil/image/upload/v1488537650/8_zc5s5f.jpg">
+      </div>
+    </div><!-- /.row -->
+  </div><!-- /.wrapper -->
 </section>
 
         <!-- Portfolio Item Heading -->

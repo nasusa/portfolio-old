@@ -39,10 +39,51 @@
     margin-bottom: 20px;
 }
 .headkuva {
-    height: 730px;
+    height: 500px;
     position: relative;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center 40%;
-    background-image: url(/images/susa.jpg);
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* global */
+
+.wrapper {
+  margin: 0 auto;
+  padding: 100px;
+  max-width: 100%;
+}
+
+/* grid */
+.bannerrow {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 0;
+    margin-bottom:0px;
+}
+.bannerrow:last-child {
+    margin-bottom: 0;
+}
+[class*="col-"] {
+    padding: 10px;
+    width: 100%;
+}
+
+.col-1-4 {
+    .img {
+        filter: grayscale(50%);
+    }
+  }
+
+@media all and ( min-width: 600px ) {
+  .col-1-4 {
+    width: 25%;
+  }
+}
 }
