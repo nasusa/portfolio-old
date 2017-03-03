@@ -37,7 +37,7 @@
         <!-- Portfolio Item Row -->
 <section class="container">
 <div class="descript">
-        <img class="img-responsive" src="http://placehold.it/750x500" alt="">
+        <img class="img-responsive" src="http://res.cloudinary.com/dpnzwgeil/image/upload/v1488545132/etusivu1_lyd1br.jpg" alt="">
 </div>
 <div class="descript">
     <h3>Project Description</h3>
@@ -57,13 +57,13 @@
 
     <div class="col-sm-3">
         <a href="#">
-            <img class="img-responsive portfolio-item" src="http://placehold.it/500x300" alt="">
+            <img class="img-responsive portfolio-item" src="http://res.cloudinary.com/dpnzwgeil/image/upload/v1488545849/1_mrqefx.png" alt="">
         </a>
     </div>
 
     <div class="col-sm-3">
         <a href="#">
-            <img class="img-responsive portfolio-item" src="http://placehold.it/500x300" alt="">
+            <img class="img-responsive portfolio-item" src="http://res.cloudinary.com/dpnzwgeil/image/upload/c_scale,h_300/v1488545848/2_pdjxz5.png" alt="">
         </a>
     </div>
 

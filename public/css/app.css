@@ -853,13 +853,11 @@ figure figcaption .header {
   background-color: rgba(188,57,23,0.9);
 }
 .otsake {
-  height: 500px;
+  height: 400px;
   position: relative;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center 50%;
+  width: 100%;
   z-index: -1;
-  background: #87ceeb;
+  background: url("https://res.cloudinary.com/dpnzwgeil/image/upload/v1488544575/wall_za7y4g.jpg") no-repeat center;
 }
 .aboutmeimg {
   width: 400px;
@@ -945,12 +943,14 @@ figure figcaption .header {
 }
 .col-lg-12 {
   width: 100%;
+  margin-top: -50px;
 }
 .page-header {
   padding-bottom: 9px;
   border-bottom: 1px solid #eee;
   text-align: center;
   margin-bottom: 30px;
+  margin-top: 30px;
   font-family: 'Open Sans Condensed', sans-serif;
 }
 .col-sm-3 {
@@ -1013,8 +1013,8 @@ figure figcaption .header {
   clear: both;
 }
 .headkuva .wrapper {
-  margin: 0 auto;
-  padding: 100px;
+  padding: 150px;
+  margin-bottom: -80px;
   max-width: 100%;
 }
 .headkuva .bannerrow {
